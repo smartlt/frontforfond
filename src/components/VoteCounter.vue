@@ -1,40 +1,66 @@
 <template>
-  <div>
-    <h1>Test</h1>
-    <b-alert show>Default Alert</b-alert>
+  <div class="vote-counter-container">
+    <div class="counter-block">
+        <div class="last-date">
+            <div class="counter-title">{{ text.lastDate }}</div>
+            <div class="counter-value">{{ endDateText }}</div>
+        </div>
+        <div class="clock">
+            <div class="counter-title">{{ text.timeLeft }}</div>
+            <div class="counter-value">{{ remaining() }}</div>
+        </div>
+				<div>
+					<b-button variant="outline-secondary">Donate</b-button>
+				</div>
+    </div>
   </div>
 </template>
 
 <script>
+const sec = 1000;
+const min = 60 * sec;
+const hr = 60 * min;
+const day = 24 * hr;
 export default {
-    name: 'VoteCounter',
-    data() {
-        return {
-            endDate: '20/04/19',
-            text: {
-                lastDate: 'วันสุดท้ายของการโหวต',
-                timeLeft: 'เวลาที่ยังโดเนทได้',
-                donateButton: 'Donate',
-            }
-        }
-  }
+	name: 'VoteCounter',
+	data() {
+		return {
+			endDate: '11 20 2018',
+			endDateText: '25 มกราคม 2019',
+			text: {
+				lastDate: 'วันสุดท้ายของการโหวต',
+				timeLeft: 'เวลาที่ยังโดเนทได้',
+				donateButton: 'Donate',
+			},
+			remaining: () => {
+				var duration = new Date(this.endDate) - Date.now() // milli
+				var seconds = parseInt((duration/sec)%60)
+        , minutes = parseInt((duration/min)%60)
+				, hours = parseInt((duration/hr)%24)
+				, days = parseInt((duration/day));
+
+				hours = (hours < 10) ? "0" + hours : hours;
+				minutes = (minutes < 10) ? "0" + minutes : minutes;
+				seconds = (seconds < 10) ? "0" + seconds : seconds;
+				days = (days < 10) ? "0" + days : days;
+				return `${days} : ${hours} : ${minutes} : ${seconds}`;
+			}
+		}
+	},
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+.counter-block {
+    text-align: center;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.counter-title {
+	font-size: 20px;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+.counter-value {
+	font-size: 60px;
 }
 </style>
