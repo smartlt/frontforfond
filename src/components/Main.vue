@@ -1,14 +1,16 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <vote-counter></vote-counter>
-    <how-to-vote></how-to-vote>
+    <vote-counter class="section"></vote-counter>
+    <how-to-vote class="section"></how-to-vote>
+    <start-of-front class="section"></start-of-front>
   </div>
 </template>
 
 <script>
 import VoteCounter from '@/components/VoteCounter';
 import HowToVote from '@/components/HowToVote';
+import StartOfFront from '@/components/StartOfFront';
 export default {
   name: 'Main',
   data() {
@@ -19,6 +21,7 @@ export default {
   components: {
     VoteCounter,
     HowToVote,
+    StartOfFront,
   },
 };
 </script>
@@ -38,5 +41,9 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.section {
+  margin-bottom: 30px;
 }
 </style>
