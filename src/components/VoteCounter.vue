@@ -7,7 +7,7 @@
         </div>
         <div class="clock">
             <div class="counter-title">{{ text.timeLeft }}</div>
-            <div class="counter-value">{{ remaining() }}</div>
+            <div class="counter-value">{{ `${days} : ${hours} : ${minutes} : ${seconds}` }}</div>
         </div>
 				<div>
 					<b-button variant="outline-secondary">Donate</b-button>
@@ -32,19 +32,31 @@ export default {
 				timeLeft: 'เวลาที่ยังโดเนทได้',
 				donateButton: 'Donate',
 			},
-			remaining: () => {
-				var duration = new Date(this.endDate) - Date.now() // milli
-				var seconds = parseInt((duration/sec)%60)
-        , minutes = parseInt((duration/min)%60)
-				, hours = parseInt((duration/hr)%24)
-				, days = parseInt((duration/day));
+			interval: '',
+			hours: '',
+			minutes: '',
+			seconds: '',
+			days: '',
+		};
+	},
+	mounted() {
+		this.remaining();
+		this.interval = setInterval(() => {
+			this.remaining(), 1000
+		})
+	},
+	methods: {
+		remaining: function() {
+			var duration = new Date(this.endDate) - Date.now() // milli
+			var seconds = parseInt((duration/sec)%60)
+			, minutes = parseInt((duration/min)%60)
+			, hours = parseInt((duration/hr)%24)
+			, days = parseInt((duration/day));
 
-				hours = (hours < 10) ? "0" + hours : hours;
-				minutes = (minutes < 10) ? "0" + minutes : minutes;
-				seconds = (seconds < 10) ? "0" + seconds : seconds;
-				days = (days < 10) ? "0" + days : days;
-				return `${days} : ${hours} : ${minutes} : ${seconds}`;
-			}
+			this.hours = (hours < 10) ? "0" + hours : hours;
+			this.minutes = (minutes < 10) ? "0" + minutes : minutes;
+			this.seconds = (seconds < 10) ? "0" + seconds : seconds;
+			this.days = (days < 10) ? "0" + days : days;
 		}
 	},
 };
