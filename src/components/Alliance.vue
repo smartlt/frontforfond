@@ -5,8 +5,11 @@
                 <h1 class="alliance-header">พันธมิตร</h1>
             </b-col>
         </b-row>
-        <p v-for="n in getRows">1</p>
-        
+        <b-row v-for="r in getRows">
+            <b-col v-for="c in getCols">
+                <p v-if="(getCols*(r-1) + c-1) < getLength">{{alliance[getCols*(r-1) + c-1].name}}</p>
+            </b-col>
+        </b-row>        
     </b-container>
 </template>
 
@@ -17,7 +20,8 @@ export default {
   name: "Alliance",
   data() {
     return {
-      alliance: allianceData
+      alliance: allianceData,
+      defineColNumbers: defineColNumbers
     };
   },
   computed: {
@@ -31,6 +35,9 @@ export default {
     },
     getCols: function() {
       return defineColNumbers;
+    },
+    getLength: function() {
+      return this.alliance.length;
     }
   }
 };
