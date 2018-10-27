@@ -5,40 +5,31 @@
                 <h1 class="alliance-header">พันธมิตร</h1>
             </b-col>
         </b-row>
-        <b-row v-for="r in getRows">
-            <b-col v-for="c in getCols">
-                <p v-if="(getCols*(r-1) + c-1) < getLength">{{alliance[getCols*(r-1) + c-1].name}}</p>
+        <b-row>
+            <b-col cols="6" md="2" class="py-2" v-for="alliance in alliances">
+                <allianceWindow></allianceWindow>
             </b-col>
-        </b-row>        
+        </b-row>
     </b-container>
 </template>
 
 <script>
+// import mockup db
 import allianceData from "./alliance-mockup.json";
+
+import AllianceWindow from "@/components/AllianceWindow";
+
 const defineColNumbers = 7;
 export default {
   name: "Alliance",
   data() {
     return {
-      alliance: allianceData,
+      alliances: allianceData,
       defineColNumbers: defineColNumbers
     };
   },
-  computed: {
-    getRows: function() {
-      let item = this.alliance.length;
-      let rows = parseInt(item / defineColNumbers);
-      if (item % defineColNumbers !== 0) {
-        rows = rows + 1;
-      }
-      return rows;
-    },
-    getCols: function() {
-      return defineColNumbers;
-    },
-    getLength: function() {
-      return this.alliance.length;
-    }
+  components: {
+      AllianceWindow
   }
 };
 </script>
@@ -54,4 +45,5 @@ export default {
   text-align: center;
   color: #7c7c7c;
 }
+
 </style>
