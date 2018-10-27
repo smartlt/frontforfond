@@ -1,6 +1,8 @@
 <template>
     <div>
-        <b-img thumbnail fluid :src="imgLink" alt="No Image" :title="pageName" />
+        <a :href="pageLink" target="_blank">
+            <b-img thumbnail fluid :src="imgLink" alt="No Image" :title="pageName" />
+        </a>
     </div>
 </template>
 
@@ -14,7 +16,8 @@ export default {
   },
   props: {
     imgLink: String,
-    pageName: String
+    pageName: String,
+    pageLink: String
   }
 };
 </script>
