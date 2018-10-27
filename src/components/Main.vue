@@ -2,11 +2,13 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <vote-counter></vote-counter>
+    <alliance></alliance>
   </div>
 </template>
 
 <script>
 import VoteCounter from '@/components/VoteCounter';
+import Alliance from '@/components/Alliance';
 
 export default {
   name: 'Main',
@@ -17,6 +19,7 @@ export default {
   },
   components: {
     VoteCounter,
+    Alliance
   },
 };
 </script>
