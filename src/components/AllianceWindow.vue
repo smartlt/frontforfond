@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-img thumbnail fluid :src="imglink" alt="Responsive image"/>
+        <b-img thumbnail fluid :src="imgLink" alt="No Image" :title="pageName" />
     </div>
 </template>
 
@@ -11,6 +11,10 @@ export default {
     return {
       imglink: require("../assets/fondlogo.png")
     };
+  },
+  props: {
+    imgLink: String,
+    pageName: String
   }
 };
 </script>

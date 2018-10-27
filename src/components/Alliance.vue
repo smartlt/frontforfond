@@ -7,7 +7,7 @@
         </b-row>
         <b-row>
             <b-col cols="6" md="2" class="py-2" v-for="alliance in alliances">
-                <allianceWindow></allianceWindow>
+                <allianceWindow :pageName="alliance.name" :imgLink="alliance.imgLink"></allianceWindow>
             </b-col>
         </b-row>
     </b-container>
@@ -17,6 +17,7 @@
 // import mockup db
 import allianceData from "./alliance-mockup.json";
 
+// import windows template
 import AllianceWindow from "@/components/AllianceWindow";
 
 const defineColNumbers = 7;
