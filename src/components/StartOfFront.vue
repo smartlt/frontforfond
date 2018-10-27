@@ -28,7 +28,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .start-of-front-container {
-    margin: 0 10%;
     height: 800px;
     background-image: url('../assets/fond-line-pink.svg');
     background-repeat: no-repeat;

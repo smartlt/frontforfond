@@ -65,7 +65,6 @@ export default {
 <style scoped>
 .how-to-vote-container {
     text-align: left;
-    margin: 0 10% 30px 10%;
 }
 
 .bg-pic {

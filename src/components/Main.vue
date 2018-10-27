@@ -2,6 +2,7 @@
   <div class="hello">
     <nav-bar></nav-bar>
     <vote-counter class="section"></vote-counter>
+    <akb-election class="section"></akb-election>
     <how-to-vote class="section"></how-to-vote>
     <start-of-front class="section"></start-of-front>
   </div>
@@ -12,6 +13,8 @@ import VoteCounter from '@/components/VoteCounter';
 import HowToVote from '@/components/HowToVote';
 import StartOfFront from '@/components/StartOfFront';
 import NavBar from '@/components/NavBar';
+import AkbElection from '@/components/AkbElection';
+
 export default {
   name: 'Main',
   data() {
@@ -23,7 +26,8 @@ export default {
     VoteCounter,
     HowToVote,
     StartOfFront,
-    NavBar
+    NavBar,
+    AkbElection
   },
 };
 </script>
@@ -47,15 +51,6 @@ a {
 
 .section {
   margin-bottom: 30px;
-}
-
-.logo {
-  position: absolute;
-  left: 50%;
-}
-
-.logo-image {
-  width: 35px;
-  height: auto;
+  margin: 0 10%;
 }
 </style>
