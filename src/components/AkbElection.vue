@@ -1,8 +1,8 @@
 <template>
   <div class="akb-election-container">
     <div class="bg-pic">
-        <b-container>
-            <b-row>
+        <b-container class="full-height">
+            <b-row class="full-height">
                 <b-col class="content">
                     {{ bgText.content }}
                 </b-col>
@@ -21,7 +21,9 @@ export default {
 	data() {
 		return {
             bgText: {
-                title: 'AKB48 Senbutsu Election',
+                title: `AKB48
+                        SENBATSU
+                        ELECTION`,
                 content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci.`,
             },
 		}
@@ -42,16 +44,19 @@ export default {
 }
 
 .title {
-    padding: 200px 0;
+    display: flex;
+    align-items: center;
     margin: 0 50px;
     text-align: center;
-    font-size: 32px;
+    font-size: 64px;
     font-weight: bold;
     color: #ff55aa;
 }
 
 .content {
-    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
     margin: 0 50px;
     font-size: 14px;
     color: white;
