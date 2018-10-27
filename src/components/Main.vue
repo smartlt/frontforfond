@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <nav-bar></nav-bar>
     <vote-counter class="section"></vote-counter>
     <how-to-vote class="section"></how-to-vote>
     <start-of-front class="section"></start-of-front>
@@ -10,6 +11,7 @@
 import VoteCounter from '@/components/VoteCounter';
 import HowToVote from '@/components/HowToVote';
 import StartOfFront from '@/components/StartOfFront';
+import NavBar from '@/components/NavBar';
 export default {
   name: 'Main',
   data() {
@@ -21,6 +23,7 @@ export default {
     VoteCounter,
     HowToVote,
     StartOfFront,
+    NavBar
   },
 };
 </script>
@@ -44,5 +47,15 @@ a {
 
 .section {
   margin-bottom: 30px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+}
+
+.logo-image {
+  width: 35px;
+  height: auto;
 }
 </style>
