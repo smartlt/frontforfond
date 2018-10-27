@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
     <vote-counter class="section"></vote-counter>
     <how-to-vote class="section"></how-to-vote>
     <start-of-front class="section"></start-of-front>

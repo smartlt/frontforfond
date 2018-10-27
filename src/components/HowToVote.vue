@@ -1,13 +1,15 @@
 <template>
   <div class="how-to-vote-container">
+    <div class="bg-pic">
+        <div class='text'>
+            <div class="head">{{ bgText.head }}</div>
+            <div class="body">{{ bgText.body }}</div>
+        </div>
+    </div>
     <b-container>
         <b-row>
-            <b-col>1</b-col>
-            <b-col>2</b-col>
-            <b-col>3</b-col>
-        </b-row>
-        <b-row>
-            <b-col v-for="section in sections" :key="section.id" v-bind:class="{active: section.isActive}" >
+            <b-col v-for="(section,index) in sections" :key="section.id" v-bind:class="{active: section.isActive}" >
+                <div class="number">0{{ index + 1 }}.</div>
                 <div class="title">{{ section.title }}</div>
                 <div class="content">{{ section.content }}</div>
                 <b-button variant="outline-secondary" :href="section.link">
@@ -24,6 +26,10 @@ export default {
 	name: 'HowToVote',
 	data() {
 		return {
+            bgText: {
+                head: 'วิธีโหวต',
+                body: 'การโหวตให้ฟ้อนด์มี 3 วิธีด้วยกัน',
+            },
 			sections: [
                 {
                     id: 1,
@@ -57,17 +63,45 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.how-to-vote-container{
+.how-to-vote-container {
     text-align: left;
+    margin: 0 10% 30px 10%;
+}
+
+.bg-pic {
+    background-image: url('../assets/5-how-bg.png');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 500px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.bg-pic > .text {
+    padding-left: 10%;
+    padding-top: 250px;
+}
+.text > .head {
+    font-size: 50px;
+}
+
+.text > .body {
+    font-size: 20px;
 }
 
 .title {
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .content {
-	font-size: 23px;
+	font-size: 14px;
     color: #a7a7a7
+}
+
+.number {
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .col.active > .title {

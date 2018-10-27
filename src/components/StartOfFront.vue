@@ -5,8 +5,8 @@
                 {{ title }}
             </div>
             <div class="content">
-                {{ content }}
-                {{ content }}
+                <div>{{ content }}</div>
+                <div>{{ content }}</div>
             </div>
         </div>
         <div class="right-container" />
@@ -46,9 +46,6 @@ export default {
 .right-container {
     display: inline-block;
     width: 50%;
-    /* background-image: url('../assets/fond-line-pink.svg');
-    background-repeat: no-repeat;
-    background-position: right; */
 }
 .title {
     margin-top: 70px;

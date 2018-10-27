@@ -1,17 +1,43 @@
 <template>
   <div class="vote-counter-container">
     <div class="counter-block">
-        <div class="last-date">
+        <div class="section">
             <div class="counter-title">{{ text.lastDate }}</div>
             <div class="counter-value">{{ endDateText }}</div>
         </div>
-        <div class="clock">
+        <div class="section">
             <div class="counter-title">{{ text.timeLeft }}</div>
-            <div class="counter-value">{{ `${days} : ${hours} : ${minutes} : ${seconds}` }}</div>
-        </div>
-				<div>
-					<b-button variant="outline-secondary">Donate</b-button>
+           	<div class="counter">
+				<div class="test"> 
+					<span class="counter-value">{{ days }}</span>
+					<span>Day</span>
 				</div>
+			</div>
+			<span class="counter-value">:</span>
+			<div class="counter">
+				<div class="test">
+					<div class="counter-value">{{ hours }}</div>
+					<div>Hour</div>
+				</div>
+			</div>
+			<span class="counter-value">:</span>
+			<div class="counter">
+				<div class="test">
+					<div class="counter-value">{{ minutes }}</div>
+					<div>Minute</div>
+				</div>
+			</div>
+			<span class="counter-value">:</span>
+			<div class="counter">
+				<div class="test">
+					<div class="counter-value">{{ seconds }}</div>
+					<div>Second</div>
+				</div>
+			</div>
+        </div>
+		<div>
+			<b-button variant="outline-secondary">Donate</b-button>
+		</div>
     </div>
   </div>
 </template>
@@ -64,8 +90,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.vote-counter-container {
+	padding: 50px;
+}
+
 .counter-block {
-    text-align: center;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .counter-title {
@@ -74,5 +105,21 @@ export default {
 
 .counter-value {
 	font-size: 60px;
+}
+
+.section {
+	margin-bottom: 30px;
+}
+
+.test {
+	display: inline-block;
+	margin-right: 20px;
+	margin: 0 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.counter{
+	display: inline-block;
 }
 </style>
