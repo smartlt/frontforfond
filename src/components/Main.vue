@@ -5,6 +5,9 @@
     <akb-election class="section"></akb-election>
     <how-to-vote class="section"></how-to-vote>
     <start-of-front class="section"></start-of-front>
+    <h1>{{ msg }}</h1>
+    <vote-counter></vote-counter>
+    <alliance></alliance>
   </div>
 </template>
 
@@ -14,7 +17,7 @@ import HowToVote from '@/components/HowToVote';
 import StartOfFront from '@/components/StartOfFront';
 import NavBar from '@/components/NavBar';
 import AkbElection from '@/components/AkbElection';
-
+import Alliance from '@/components/Alliance';
 export default {
   name: 'Main',
   data() {
@@ -27,7 +30,8 @@ export default {
     HowToVote,
     StartOfFront,
     NavBar,
-    AkbElection
+    AkbElection.
+    Alliance
   },
 };
 </script>
