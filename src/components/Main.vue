@@ -1,6 +1,7 @@
 <template>
-  <div class="hello">
-    <nav-bar></nav-bar>
+  <div class="hello">   
+     <headerSection></headerSection>
+    <nav-bar></nav-bar>     
     <vote-counter class="section"></vote-counter>
     <akb-election class="section"></akb-election>
     <how-to-vote class="section"></how-to-vote>
@@ -18,6 +19,8 @@ import StartOfFront from '@/components/StartOfFront';
 import NavBar from '@/components/NavBar';
 import AkbElection from '@/components/AkbElection';
 import Alliance from '@/components/Alliance';
+import HeaderSection from '@/components/HeaderSection';
+
 export default {
   name: 'Main',
   data() {
@@ -30,8 +33,9 @@ export default {
     HowToVote,
     StartOfFront,
     NavBar,
-    AkbElection.
-    Alliance
+    AkbElection,
+    Alliance,
+    HeaderSection
   },
 };
 </script>
