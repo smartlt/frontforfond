@@ -45,7 +45,7 @@
 <style scoped>
   .site-footer{
     height: auto;
-    margin-top: 55px;
+    margin-top: 15px;
     padding-bottom: 90px;
     background-color: #f3f3f3;
 
