@@ -11,6 +11,7 @@
             © 2018 Front For Fond. All rights reserved.
           </b-col>
           <b-col class="footer-links" cols="12" md="6">
+            <b-button-group>
               <b-button href="#" class="btn btn-secondary">
                 <div id="button-content-facebook">
                   <img class="footer-link-icon" src="../assets/facebook-black.svg" >
@@ -26,6 +27,7 @@
                   <img class="footer-link-icon" src="../assets/youtube-black.svg" >
                 </div>
               </b-button>
+            </b-button-group>
           </b-col>
         </b-row>
       </b-container>
@@ -74,13 +76,19 @@
 
   .footer-link-icon{
     width: 1rem;
-    float: right;
+    position: absolute; right: 0;
   }
 
   .btn-secondary, .btn-secondary:hover, .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:focus{
     background-color: transparent ;
     border-color: transparent ;
-    float: none;
+
+  }
+
+  .btn-group{
+    position: absolute; 
+    right: 0;
+    display: -webkit-inline-box;
   }
 
 
@@ -90,9 +98,6 @@
     }
   .footer-links{
     margin-top: 0px;
-  }
-  .btn-secondary, .btn-secondary:hover, .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:focus{
-    float: right;
   }
 }
   
