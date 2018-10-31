@@ -7,6 +7,7 @@
     <how-to-vote class="section"></how-to-vote>
     <start-of-front class="section"></start-of-front>
     <alliance></alliance>
+    <before-footer></before-footer>
     <site-footer></site-footer>
     
   </div>
@@ -21,6 +22,7 @@ import NavBar from '@/components/NavBar';
 import AkbElection from '@/components/AkbElection';
 import Alliance from '@/components/Alliance';
 import SiteFooter from '@/components/SiteFooter';
+import BeforeFooter from '@/components/BeforeFooter';
 
 export default {
   name: 'Main',
@@ -38,6 +40,7 @@ export default {
     Alliance,
     WhatIsElection,
     SiteFooter,
+    BeforeFooter
 
   },
 };
