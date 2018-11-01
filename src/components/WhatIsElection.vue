@@ -2,7 +2,7 @@
     <div class="what-is-election-container">
         <b-container>
             <b-row>
-                <div class="col-12 col-lg-6 left-container">
+                <div class="col-12 col-lg-5 left-container">
                     <div class="title">
                         {{ title }}
                     </div>
@@ -11,7 +11,9 @@
                         <div>{{ content }}</div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 right-container" />
+                <div class="col-12 col-lg-7 right-container">
+                    <img width="600" src="../assets/3-1.jpg">
+                </div>
             </b-row>
         </b-container>
     </div>
@@ -33,7 +35,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .what-is-election-container {
-    height: 100%;
+    min-height: 100vh;
     background-image: url('../assets/fond-line-pink.svg');
     background-repeat: no-repeat;
     background-position: right center;
@@ -49,7 +51,10 @@ export default {
     color: #a7a7a7;
 }
 .right-container {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .title {
     margin-top: 70px;
@@ -61,5 +66,18 @@ export default {
 .fff-logo {
     width: 440px;
     height: 225px;
+}
+
+@media (max-width: 991.98px) {
+    .what-is-election-container {
+        background-image: none;
+    }
+    .left-container {
+        min-height: 50vh;
+    }
+    .right-container {
+        min-height: 50vh;
+        background-size: 50%;
+    }
 }
 </style>

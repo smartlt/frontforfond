@@ -14,11 +14,11 @@
     </div>
     <b-container>
         <b-row>
-            <b-col v-for="(section,index) in sections" :key="section.id" v-bind:class="{active: section.isActive}" >
+            <b-col cols="12" lg="4" v-for="(section,index) in sections" :key="section.id" v-bind:class="{active: section.isActive}" >
                 <div class="number">0{{ index + 1 }}.</div>
                 <div class="title">{{ section.title }}</div>
                 <div class="content">{{ section.content }}</div>
-                <b-button variant="outline-secondary" :href="section.link">
+                <b-button variant="outline-secondary" block class="votebutton" :href="section.link">
                     {{ section.button }}
                 </b-button>
             </b-col>
@@ -78,7 +78,7 @@ export default {
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
-    height: 650px;
+    height: 100vh;
     width: 100%;
     color: white;
     margin-bottom: 30px;
@@ -124,5 +124,8 @@ export default {
 
 .col.active > button {
     background-color: #57defe;
+}
+.votebutton{
+    margin: 20px 0;
 }
 </style>

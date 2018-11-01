@@ -38,7 +38,7 @@ export default {
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
-    height: 500px;
+    height: 100vh;
     color: white;
     margin-bottom: 30px;
 }

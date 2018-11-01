@@ -13,6 +13,10 @@
                         <div class="content">
                             <div>{{ content }}</div>
                             <div>{{ content }}</div>
+                            <div>{{ content }}</div>
+                            <div>{{ content }}</div>
+                            <div>{{ content }}</div>
+                            <div>{{ content }}</div>
                         </div>
                     </b-col>
                 </b-row>
@@ -51,27 +55,31 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .fond-quote-container {
-    height: 100%;
+    min-height: 100vh;
     background-image: url('../assets/fond-line-blue.svg');
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 55%;
-    padding: 5rem 0;
+    background-size: 40%;
     text-align: center;
 }
+
 .left-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    min-height: 100vh;
 }
 .right-container {
-    height: 100%;
+    min-height: 100vh;
     background-image: url('../assets/16.svg');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 60%;
+    background-size: 100%;
     color: #a7a7a7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .quote-content{
     text-align: center;
@@ -83,7 +91,7 @@ export default {
 
 .title {
     margin-top: 70px;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: bold;
     color: #57defe;
     text-align: center;
@@ -91,5 +99,18 @@ export default {
 .fff-logo {
     width: 220px;
     height: 125px;
+}
+
+@media (max-width: 991.98px) {
+    .fond-quote-container {
+        background-image: none;
+    }
+    .left-container {
+        min-height: 50vh;
+    }
+    .right-container {
+        min-height: 50vh;
+        background-size: 50%;
+    }
 }
 </style>

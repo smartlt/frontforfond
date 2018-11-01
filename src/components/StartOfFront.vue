@@ -34,10 +34,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .start-of-front-container {
-    height: 100%;
+    min-height: 100vh;
     background-image: url('../assets/fond-line-pink.svg');
     background-repeat: no-repeat;
     background-position: right center;
+}
+@media (max-width: 991.98px) {
+    .start-of-front-container {
+        background-image: none;
+    }
 }
 .left-container {
     height: 100%;
@@ -46,6 +51,7 @@ export default {
     background-position: top center;
     background-size: 60%;
     color: #a7a7a7;
+    padding: 5rem 0;
 }
 .right-container {
     display: flex;
