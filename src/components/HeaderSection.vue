@@ -19,7 +19,7 @@ export default {
   name: "HeaderSection",
   methods: {
     parallax1: function() {
-      var depth, i, layer, layers, len, movement, topDistance, translate3d;
+      let depth, i, layer, layers, len, movement, topDistance, translate3d;
       topDistance = pageYOffset;
       layers = document.querySelectorAll("[data-type='parallax']");
       for (i = 0, len = layers.length; i < len; i++) {
@@ -32,12 +32,9 @@ export default {
         layer.style["-ms-transform"] = translate3d;
         layer.style["-o-transform"] = translate3d;
         layer.style.transform = translate3d;
-        var vpheight = Math.max(
-          document.documentElement.clientHeight,
-          window.innerHeight || 0
-        );
-        layer.style.height =
-          (vpheight - pageYOffset - movement).toString() + "px";
+        let vpheight = window.innerHeight;
+        let heightValue = (vpheight - pageYOffset - movement) >= 0 ? (vpheight - pageYOffset - movement) : 0;
+        layer.style.height = heightValue.toString() + "px";
       }
     }
   },
