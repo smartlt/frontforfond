@@ -1,25 +1,30 @@
 <template>
   <div class="hello">   
-     <headerSection></headerSection>
+    <headerSection></headerSection>
     <nav-bar></nav-bar>     
     <vote-counter class="section"></vote-counter>
+    <what-is-election></what-is-election>
     <akb-election class="section"></akb-election>
     <how-to-vote class="section"></how-to-vote>
     <start-of-front class="section"></start-of-front>
-    <h1>{{ msg }}</h1>
-    <vote-counter></vote-counter>
     <alliance></alliance>
+    <before-footer></before-footer>
+    <site-footer></site-footer>
+    
   </div>
 </template>
 
 <script>
 import VoteCounter from '@/components/VoteCounter';
 import HowToVote from '@/components/HowToVote';
+import WhatIsElection from '@/components/WhatIsElection';
 import StartOfFront from '@/components/StartOfFront';
 import NavBar from '@/components/NavBar';
 import AkbElection from '@/components/AkbElection';
 import Alliance from '@/components/Alliance';
 import HeaderSection from '@/components/HeaderSection';
+import SiteFooter from '@/components/SiteFooter';
+import BeforeFooter from '@/components/BeforeFooter';
 
 export default {
   name: 'Main',
@@ -36,14 +41,31 @@ export default {
     AkbElection,
     Alliance,
     HeaderSection
+    WhatIsElection,
+    SiteFooter,
+    BeforeFooter
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+body{
+  font-family: 'Prompt', sans-serif;
+}
+
+.fs-prompt-light{
+  font-family: 'Prompt', sans-serif;
+  font-weight: lighter
+}
+
+.fs-prompt-bold{
+  font-family: 'Prompt', sans-serif;
+  font-weight: bold
+}
 h1, h2 {
-  font-weight: normal;
+  font-weight: bold;
 }
 ul {
   list-style-type: none;
@@ -59,6 +81,10 @@ a {
 
 .section {
   margin-bottom: 30px;
-  margin: 0 10%;
+  /* margin: 0 10%; */
+}
+
+.full-height{
+  height: 100%;
 }
 </style>

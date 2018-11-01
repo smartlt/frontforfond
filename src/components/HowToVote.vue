@@ -1,10 +1,16 @@
 <template>
   <div class="how-to-vote-container">
     <div class="bg-pic">
-        <div class='text'>
-            <div class="head">{{ bgText.head }}</div>
-            <div class="body">{{ bgText.body }}</div>
-        </div>
+        <b-row class="full-height"> 
+            <b-col class="full-height">
+                <div class='text full-height'>
+                    <h1 class="head">{{ bgText.head }}</h1>
+                    <div class="body">{{ bgText.body }}</div>
+                </div>`
+            </b-col>
+            <b-col>
+            </b-col>
+        </b-row>
     </div>
     <b-container>
         <b-row>
@@ -68,21 +74,25 @@ export default {
 }
 
 .bg-pic {
-    background-image: url('../assets/5-how-bg.png');
+    background-image: url('../assets/5-howtovote.png');
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
-    height: 500px;
+    height: 650px;
+    width: 100%;
     color: white;
     margin-bottom: 30px;
 }
 
-.bg-pic > .text {
+.bg-pic .text {
     padding-left: 10%;
-    padding-top: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .text > .head {
-    font-size: 50px;
+    font-size: 100px;
 }
 
 .text > .body {
@@ -99,8 +109,9 @@ export default {
 }
 
 .number {
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 500;
+    color: #eeeeee;
 }
 
 .col.active > .title {
