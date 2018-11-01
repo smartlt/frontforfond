@@ -40,7 +40,7 @@ export default {
     NavBar,
     AkbElection,
     Alliance,
-    HeaderSection
+    HeaderSection,
     WhatIsElection,
     SiteFooter,
     BeforeFooter
