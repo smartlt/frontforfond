@@ -5,6 +5,7 @@
     <vote-counter class="section"></vote-counter>
     <what-is-election></what-is-election>
     <akb-election class="section"></akb-election>
+    <fond-quote class="section"></fond-quote>
     <how-to-vote class="section"></how-to-vote>
     <start-of-front class="section"></start-of-front>
     <alliance></alliance>
@@ -25,6 +26,7 @@ import Alliance from '@/components/Alliance';
 import HeaderSection from '@/components/HeaderSection';
 import SiteFooter from '@/components/SiteFooter';
 import BeforeFooter from '@/components/BeforeFooter';
+import FondQuote from '@/components/FondQuote';
 
 export default {
   name: 'Main',
@@ -43,7 +45,8 @@ export default {
     HeaderSection,
     WhatIsElection,
     SiteFooter,
-    BeforeFooter
+    BeforeFooter,
+    FondQuote
   },
 };
 </script>

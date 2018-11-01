@@ -3,10 +3,10 @@
     <div class="bg-pic">
         <b-container class="full-height">
             <b-row class="full-height">
-                <b-col class="content">
+                <b-col class="content order-2">
                     {{ bgText.content }}
                 </b-col>
-                <b-col class="title">
+                <b-col class="title order-1">
                     <span>{{ bgText.title }}</span>
                 </b-col>
             </b-row>

@@ -1,16 +1,20 @@
 <template>
     <div class="start-of-front-container">
         <b-container>
-            <div class="left-container">
-                <div class="title">
-                    {{ title }}
-                </div>
-                <div class="content">
-                    <div>{{ content }}</div>
-                    <div>{{ content }}</div>
-                </div>
-            </div>
-            <div class="right-container" />
+            <b-row>
+                <b-col class="left-container">
+                    <div class="title">
+                        {{ title }}
+                    </div>
+                    <div class="content">
+                        <div>{{ content }}</div>
+                        <div>{{ content }}</div>
+                    </div>
+                </b-col>
+                <b-col class="right-container" >
+                    <img width="600" src="../assets/fff-rect-gray-1200px.png">
+                </b-col>
+            </b-row>
         </b-container>
     </div>
 </template>
@@ -36,8 +40,6 @@ export default {
     background-position: right center;
 }
 .left-container {
-    display: inline-block;
-    width: 40%;
     height: 100%;
     background-image: url('../assets/fond-line-pink.svg');
     background-repeat: no-repeat;
@@ -46,8 +48,9 @@ export default {
     color: #a7a7a7;
 }
 .right-container {
-    display: inline-block;
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .title {
     margin-top: 70px;

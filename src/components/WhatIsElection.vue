@@ -1,16 +1,18 @@
 <template>
-    <div class="start-of-front-container">
+    <div class="what-is-election-container">
         <b-container>
-            <div class="left-container">
-                <div class="title">
-                    {{ title }}
+            <b-row>
+                <div class="col-12 col-lg-6 left-container">
+                    <div class="title">
+                        {{ title }}
+                    </div>
+                    <div class="content">
+                        <div>{{ content }}</div>
+                        <div>{{ content }}</div>
+                    </div>
                 </div>
-                <div class="content">
-                    <div>{{ content }}</div>
-                    <div>{{ content }}</div>
-                </div>
-            </div>
-            <div class="right-container" />
+                <div class="col-12 col-lg-6 right-container" />
+            </b-row>
         </b-container>
     </div>
 </template>
@@ -30,15 +32,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.start-of-front-container {
+.what-is-election-container {
     height: 100%;
     background-image: url('../assets/fond-line-pink.svg');
     background-repeat: no-repeat;
     background-position: right center;
+    margin: 3rem 1rem;
 }
 .left-container {
     display: inline-block;
-    width: 40%;
     height: 100%;
     background-image: url('../assets/fond-line-pink.svg');
     background-repeat: no-repeat;
@@ -48,7 +50,6 @@ export default {
 }
 .right-container {
     display: inline-block;
-    width: 50%;
 }
 .title {
     margin-top: 70px;
