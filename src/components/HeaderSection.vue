@@ -4,7 +4,7 @@
       <div class="layer-bg" data-type="parallax" data-depth="0.1"></div>      
       <div class="layer-logo-fff" data-type="parallax" data-depth="0.4"></div> 
       <div class="layer-fond-stand" data-type="parallax" data-depth="1.1"></div>
-      <div class="layer-title" data-type="parallax" data-depth="1.0"></div>
+      <div class="layer-title" data-type="parallax" data-depth="1.5"></div>
       <div class="layer-cloud-line" data-type="parallax" data-depth="0.1"></div>
       <div class="layer-cloud-2" data-type="parallax" data-depth="0.7"></div>
       <div class="layer-cloud-3" data-type="parallax" data-depth="0.7"></div>
@@ -32,7 +32,7 @@ export default {
         layer.style["-ms-transform"] = translate3d;
         layer.style["-o-transform"] = translate3d;
         layer.style.transform = translate3d;
-        let vpheight = window.innerHeight;
+        let vpheight = document.documentElement.clientHeight;
         let heightValue = (vpheight - pageYOffset - movement) >= 0 ? (vpheight - pageYOffset - movement) : 0;
         layer.style.height = heightValue.toString() + "px";
       }
@@ -53,7 +53,7 @@ export default {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   z-index: -1;
 }
 
@@ -69,7 +69,7 @@ export default {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: inherit;
   height: inherit;
   position: fixed;
   z-index: -1;
@@ -80,7 +80,7 @@ export default {
   background-position: center bottom 0vh;
   background-size: 100vw 20vh;
   background-repeat: no-repeat;
-  width: 100%;
+  width: inherit;
   height: inherit;
   position: fixed;
   z-index: -1;
@@ -91,7 +91,7 @@ export default {
   background-position: top center;
   background-size: 10% auto;
   background-repeat: no-repeat;
-  width: 100%;
+  width: inherit;
   height: inherit;
   position: fixed;
   z-index: -1;
@@ -100,10 +100,10 @@ export default {
 .layer-fond-stand {
   background: url("../assets/1-fond-1.png");
   background-position-x: center;
-  background-position-y: top 40vh;
+  background-position-y: 40vh;
   background-size: 60%;
   background-repeat: no-repeat;
-  width: 100%;
+  width: inherit;
   height: inherit;
   position: fixed;
   z-index: -1;
@@ -114,7 +114,7 @@ export default {
   background-position: right center;
   background-size: 40% auto;
   background-repeat: no-repeat;
-  width: 100%;
+  width: inherit;
   height: inherit;
   position: fixed;
   z-index: -1;
@@ -125,7 +125,7 @@ export default {
   background-position: left center;
   background-size: 30% auto;
   background-repeat: no-repeat;
-  width: 100%;
+  width: inherit;
   height: inherit;
   position: fixed;
   z-index: -1;
@@ -136,7 +136,7 @@ export default {
   background-position: left 15vw top 20%;
   background-size: 20% auto;
   background-repeat: no-repeat;
-  width: 100%;
+  width: inherit;
   height: inherit;
   position: fixed;
   z-index: -1;
@@ -147,7 +147,7 @@ export default {
   background-position: right 15vw top 20%;
   background-size: 20% auto;
   background-repeat: no-repeat;
-  width: 100%;
+  width: inherit;
   height: inherit;
   position: fixed;
   z-index: -1;
@@ -155,10 +155,10 @@ export default {
 
 .layer-title {
   background: url("../assets/1-fff-title.png");
-  background-position: center 70vh;
+  background-position: center 100vh;
   background-size: 100vw auto;
   background-repeat: no-repeat;
-  width: 100%;
+  width: inherit;
   height: inherit;
   position: fixed;
   z-index: -1;
@@ -167,7 +167,7 @@ export default {
 @media only screen and (min-width: 400px) {
   .layer-fond-stand {
     background-size: 40%;
-    background-position-y: top 50vh;
+    background-position-y: 50vh;
   }
 }
 
