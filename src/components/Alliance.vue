@@ -6,7 +6,7 @@
             </b-col>
         </b-row>
         <b-row>
-            <b-col cols="6" md="2" class="py-2" v-for="alliance in alliances">
+            <b-col cols="6" md="2" class="py-2" v-for="(alliance, key) in alliances" :key="key">
                 <allianceWindow :pageName="alliance.name" :imgLink="alliance.imgLink" :pageLink="alliance.pageLink"></allianceWindow>
             </b-col>
         </b-row>

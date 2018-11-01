@@ -1,7 +1,7 @@
 <template>
     <div>
         <a :href="pageLink" target="_blank">
-            <b-img thumbnail fluid :src="imgLink" alt="No Image" :title="pageName" />
+            <b-img fluid :src="imgLink" alt="No Image" :title="pageName" />
         </a>
     </div>
 </template>
@@ -24,9 +24,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-img {
+img {  
+  max-height: 154px;
   width: 154px;
-  height: 154px;
   background-color: #f8dadf;
 }
+
 </style>
