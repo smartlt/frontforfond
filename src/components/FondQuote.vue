@@ -3,14 +3,14 @@
         <div class="fond-quote-container">
             <b-container>
                 <b-row class="">
-                    <b-col class="left-container">
-                        <img width="600" src="../assets/4-fond-2.png">
+                    <b-col cols="12" lg="6" class="left-container">
+                        <img width="450" src="../assets/4-fond-2.png">
                     </b-col>
-                    <b-col class="right-container full-height">
+                    <b-col cols="12" lg="6" class="right-container">
                         <div class="title">
                             {{ title }}
                         </div>
-                        <div class="content full-height">
+                        <div class="content">
                             <div>{{ content }}</div>
                             <div>{{ content }}</div>
                         </div>
@@ -52,7 +52,7 @@ export default {
 <style scoped>
 .fond-quote-container {
     height: 100%;
-    background-image: url('../assets/fond-line-pink.svg');
+    background-image: url('../assets/fond-line-blue.svg');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 55%;
@@ -67,10 +67,10 @@ export default {
 }
 .right-container {
     height: 100%;
-    background-image: url('../assets/fond-line-pink.svg');
+    background-image: url('../assets/16.svg');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 30%;
+    background-size: 60%;
     color: #a7a7a7;
 }
 .quote-content{
@@ -89,7 +89,7 @@ export default {
     text-align: center;
 }
 .fff-logo {
-    width: 440px;
-    height: 225px;
+    width: 220px;
+    height: 125px;
 }
 </style>

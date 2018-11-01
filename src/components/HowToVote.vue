@@ -74,7 +74,7 @@ export default {
 }
 
 .bg-pic {
-    background-image: url('../assets/5-howtovote.png');
+    background-image: url('../assets/5.jpg');
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
