@@ -3,8 +3,8 @@
     <div class="parallax-container container-fluid p-0">
       <div class="layer-bg" data-type="parallax" data-depth="0.1"></div>      
       <div class="layer-logo-fff" data-type="parallax" data-depth="0.4"></div> 
-      <div class="layer-fond-stand" data-type="parallax" data-depth="1.3"></div>
-      <div class="layer-title" data-type="parallax" data-depth="-0.5"></div>
+      <div class="layer-fond-stand" data-type="parallax" data-depth="1.7"></div>
+      <div class="layer-title" data-type="parallax" data-depth="0"></div>
       <div class="layer-cloud-line" data-type="parallax" data-depth="1"></div>
       <div class="layer-cloud-2" data-type="parallax" data-depth="0.2"></div>
       <div class="layer-cloud-3" data-type="parallax" data-depth="0.2"></div>
@@ -140,6 +140,7 @@ export default {
   height: inherit;
   position: fixed;
   z-index: -2;
+
 }
 
 .layer-cloud-5 {
@@ -150,12 +151,12 @@ export default {
   width: 100%;
   height: inherit;
   position: fixed;
-  z-index: -2;
+
 }
 
 .layer-title {
   background: url("../assets/1-fff-title.png");
-  background-position: center 1vh;
+  background-position: center 20vh;
   background-size: 80vw auto;
   background-repeat: no-repeat;
   width: 100%;
@@ -166,7 +167,7 @@ export default {
 
 @media only screen and (min-width: 1024px) {
   .layer-fond-stand {
-    background-size: auto 90vh;
+    background-size: auto 100vh;
     background-position-y: 70vh;
   }
 
@@ -189,7 +190,8 @@ export default {
 
    }
    .layer-title{
-    background-position-y: 1vh;     
+
+  background-position: center 40vh;     
     background-size: auto 10vh;
   }
 
