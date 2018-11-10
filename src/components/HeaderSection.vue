@@ -77,7 +77,7 @@ export default {
 
 .layer-cloud-line {
   background: url("../assets/1-cloud-line.png");
-  background-position: center bottom 0vh;
+  background-position: center bottom;
   background-size: 100vw;
   background-repeat: no-repeat;
   width: 100%;
