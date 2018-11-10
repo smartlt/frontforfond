@@ -23,8 +23,8 @@
                     <h1 class="quote-text">{{quote1}}</h1>
                     <h1 class="quote-text">{{quote2}}</h1>
                     <br>
-                    <p>{{quote3}}</p>
-                    <p>{{quote4}}</p>
+                    <h3>{{quote3}}</h3>
+                    <h4>{{quote4}}</h4>
                 </b-col>
             </b-row>
         </b-container>
@@ -85,12 +85,27 @@ export default {
     font-weight: 500;
 }
 
+h3{
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 18px;
+}
+
 .title {
-    margin-top: 70px;
-    font-size: 80px;
+    margin-top: 80px;
+    font-size: 60px;
+    letter-spacing: 6px;
+    line-height: 60px;
+    margin-bottom: 5vh;
     font-weight: bold;
-    color: #57defe;
     text-align: center;
+    color: #57defe;
+    width: 300px;
 }
 .fff-logo {
     width: 220px;

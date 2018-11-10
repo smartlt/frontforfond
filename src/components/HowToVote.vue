@@ -86,6 +86,7 @@ export default {
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     height: 100vh;
     width: 100%;
     color: white;
@@ -98,13 +99,17 @@ export default {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
 }
 .text > .head {
     font-size: 100px;
+    letter-spacing: 10px;
 }
 
 .text > .body {
+    margin-top: -20px;
     font-size: 20px;
+    font-weight: 300;
 }
 
 .title {
@@ -113,7 +118,10 @@ export default {
 
 .content {
 	font-size: 14px;
-    color: #a7a7a7
+    color: #a7a7a7;
+    margin: 0 0 1.5em;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .number {
@@ -128,6 +136,7 @@ export default {
 
 .col.active > .content {
     color: black;
+    
 }
 
 .col.active > button {

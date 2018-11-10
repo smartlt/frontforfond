@@ -65,11 +65,15 @@ export default {
     justify-content: center;
 }
 .title {
-    margin-top: 70px;
+    margin-top: 80px;
     font-size: 60px;
+    letter-spacing: 6px;
+    line-height: 60px;
+    margin-bottom: 5vh;
     font-weight: bold;
-    color: #ff55aa;
     text-align: center;
+    color: #ff55aa;
+    width: 400px;
 }
 .fff-logo {
     width: 440px;
