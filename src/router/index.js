@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Router from 'vue-router';
+import VueRouter from 'vue-router';
 import BootstrapVue from 'bootstrap-vue';
 import Main from '@/components/Main';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -15,10 +15,10 @@ import Alliance from '@/components/Alliance';
 import SiteFooter from '@/components/SiteFooter';
 
 
-Vue.use(Router);
+Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 
-export default new Router({
+export default new VueRouter({
   routes: [
     {
       path: '/',
@@ -36,12 +36,12 @@ export default new Router({
       component: VoteCounter,
     },
     {
-      path: '/elec',
+      path: '/elecBNK',
       name: 'Election',
       component: WhatIsElection,
     },
     {
-      path: '/elec2',
+      path: '/elecAKB',
       name: 'Election2',
       component: AkbElection,
     },
@@ -72,3 +72,4 @@ export default new Router({
     },
   ],
 });
+
