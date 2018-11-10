@@ -1,18 +1,16 @@
 <template>
   <div class="hello">   
     <nav-bar></nav-bar>  
-
-    <div id="main"><headerSection></headerSection></div>
-    <div id="below-main">#below-main</div>
+    <headerSection></headerSection>
     <vote-counter class="section"></vote-counter>
-    <what-is-election></what-is-election>
+    <what-is-election ></what-is-election>
     <akb-election class="section"></akb-election>
-    <fond-quote class="section"></fond-quote>
+    <fond-quote class="section" ></fond-quote>
     <how-to-vote class="section"></how-to-vote>
     <start-of-front class="section"></start-of-front>
     <alliance></alliance>
     <site-footer></site-footer>
-    
+    <router-view></router-view>
   </div>
 </template>
 
