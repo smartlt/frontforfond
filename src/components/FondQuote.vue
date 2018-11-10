@@ -11,12 +11,7 @@
                             {{ title }}
                         </div>
                         <div class="content">
-                            <div>{{ content }}</div>
-                            <div>{{ content }}</div>
-                            <div>{{ content }}</div>
-                            <div>{{ content }}</div>
-                            <div>{{ content }}</div>
-                            <div>{{ content }}</div>
+                            <div><p>{{ content }}</p></div>
                         </div>
                     </b-col>
                 </b-row>
@@ -42,7 +37,7 @@ export default {
 	data() {
 		return {
             title: 'ส่งฟ้อนด์ให้ถึงฝัน',
-            content: `Lorem Ipsum is simply dummy text of the printing and typesetting`,
+            content: `ณ วันที่ 13 ตุลาคม 2561 เวลา 23:24 น. ฟ้อนด์ ณัฐทิชา จันทรวารีเลขา ได้ทำการลงสมัคร BNK48 6th Single Senbatsu General Election เพื่อพิสูจน์ตัวเอง การเลือกตั้งนี้เป็นครั้งแรกของวง BNK48 หนทางการต่อสู่ไปสู่ฝันครั้งนี้ มันมีอะไรหลายๆ อย่างที่น้องจะต้องเผชิญ มาร่วมกันช่วยนำพาฝันของสาวน้อยให้เป็นจริงด้วยกัน ในการเลือกตั้งให้เธอติดเซ็มบัตสึซิงเกิลที่ 6 นี้ด้วยกัน`,
             quote1: `(จะ)เป็นคนที่ยิ้มเก่งที่สุดใน BNK ค่ะ`,
             quote2: `หนูจะยิ้มสู้กับทุกอุปสรรคค่ะ`,
             quote3: `Fond BNK48`,
@@ -87,6 +82,7 @@ export default {
 }
 .quote-text{
     font-size: 4rem;
+    font-weight: 500;
 }
 
 .title {

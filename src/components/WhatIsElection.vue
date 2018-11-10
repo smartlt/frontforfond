@@ -61,6 +61,7 @@ export default {
     align-items: center;
     justify-content: center;
 }
+
 .title {
     margin-top: 80px;
     font-size: 60px;
@@ -68,9 +69,10 @@ export default {
     line-height: 60px;
     margin-bottom: 5vh;
     font-weight: bold;
-    color: #ff55aa;
     text-align: center;
+    color: #ff55aa;
 }
+
 .fff-logo {
     width: 440px;
     height: 225px;

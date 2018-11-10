@@ -53,7 +53,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-@import url('https://fonts.googleapis.com/css?family=Prompt:300,700');
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,500,700');
 body{
   font-family: 'Prompt', sans-serif;
 }
@@ -73,6 +73,7 @@ h1, h2 {
 
 p{
   margin: 0 0 1.5em;
+  font-size: 18px;
   font-weight: 300;
 }
 
