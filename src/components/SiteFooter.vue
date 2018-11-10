@@ -1,6 +1,10 @@
-
 <template>
-  <footer class="site-footer">
+    <div class="before-footer">
+        <div class="container">
+            <img class="over" src="../assets/6-fond3.png" >
+            <img class="under" src="../assets/fond-line-blue.svg" >
+        </div>
+         <footer class="site-footer">
     <b-container fluid class="site-footer-container">
       <div class="footer-logo">
         <img class="logo-image" src="../assets/fff-rect-gray-1200px.png" >
@@ -33,17 +37,41 @@
       </b-container>
     </b-container>
   </footer>
+    </div>
+
+    
 </template>
 
-<script>
-  export default {
-    name: 'SiteFooter',
-};
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .site-footer{
+.under
+{
+    width: 300px;
+    position:absolute;
+    top: 0; 
+    left: 50%;
+    transform: translate(-20%,0);
+    z-index:-1;
+}
+.over
+{
+    width: 450px;
+    position:absolute;
+    top: 130px; 
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index:1;
+
+}
+.container{
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+}
+.before-footer{
+    width: 100%;
+    height: 500px;
+}
+.site-footer{
     height: auto;
     margin-top: 15px;
     padding-bottom: 90px;
@@ -112,5 +140,4 @@
       width: 1140px;
     }
 }
-
 </style>
