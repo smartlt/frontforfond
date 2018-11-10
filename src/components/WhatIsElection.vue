@@ -7,8 +7,10 @@
                         {{ title }}
                     </div>
                     <div class="content">
-                        <div>{{ content }}</div>
-                        <div>{{ content }}</div>
+                        <div><p>{{ content1 }}</p></div>
+                        <div><p>{{ content2 }}</p></div>
+                        <div><p>{{ content3 }}</p></div>
+                        <div><p>{{ content4 }}</p></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-7 right-container">
@@ -26,7 +28,10 @@ export default {
 		return {
             title: `อะไรคือ
                     BNK48 Election?`,
-            content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
+            content1: `ในวันที่ 30 กันยายน 2018 ได้มีประกาศเปิดตัวของกิจกรรม "งานเลือกตั้งเซ็มบัตสึ 6th Single Senbatsu General Election" หลักสำหรับซิงเกิลที่ 6 ในปี 2019`,
+            content2: `โดยสิ่งที่พิเศษสำหรับในซิงเกิ้ลนี้เพราะเซ็มบัตสึ หรือสมาชิกหลักทั้ง 16 คนในแต่ละซิงเกิ้ลที่ผ่านมานั้น ล้วนแล้วแต่ถูกคัดเลือกมาจากคณะผู้บริหารหรือกรรมการของ BNK48 Official ซึ่งได้คัดกรองจากหลายๆ ปัจจัย`,
+            content3: `แต่ครั้งนี้จะเป็นครั้งแรกที่แฟนคลับ BNK48 สามารถเลือกตั้งหรือโหวตไอดอลที่ตัวเองชื่นชอบให้ติดเซ็มบัตสึได้ด้วยตนเอง`,
+            content4: `โดยทุกคนสามารถร่วมกันโหวตได้ตั้งแต่วันนี้ - 20 ม.ค. 2019 และติดตามผลประกาศในวันที่ 26 ม.ค. 2019 ที่ Impact Arena เมืองทองธานี หรือ การถ่ายทอดสด`
 		}
 	},
 };
@@ -57,8 +62,11 @@ export default {
     justify-content: center;
 }
 .title {
-    margin-top: 70px;
+    margin-top: 80px;
     font-size: 60px;
+    letter-spacing: 6px;
+    line-height: 60px;
+    margin-bottom: 5vh;
     font-weight: bold;
     color: #ff55aa;
     text-align: center;
