@@ -1,7 +1,9 @@
 <template>
   <div class="hello">   
-    <headerSection></headerSection>
-    <nav-bar></nav-bar>     
+    <nav-bar></nav-bar>  
+
+    <div id="main"><headerSection></headerSection></div>
+    <div id="below-main">#below-main</div>
     <vote-counter class="section"></vote-counter>
     <what-is-election></what-is-election>
     <akb-election class="section"></akb-election>
@@ -9,7 +11,6 @@
     <how-to-vote class="section"></how-to-vote>
     <start-of-front class="section"></start-of-front>
     <alliance></alliance>
-    <before-footer></before-footer>
     <site-footer></site-footer>
     
   </div>
@@ -25,8 +26,9 @@ import AkbElection from '@/components/AkbElection';
 import Alliance from '@/components/Alliance';
 import HeaderSection from '@/components/HeaderSection';
 import SiteFooter from '@/components/SiteFooter';
-import BeforeFooter from '@/components/BeforeFooter';
 import FondQuote from '@/components/FondQuote';
+
+
 
 export default {
   name: 'Main',
@@ -45,9 +47,9 @@ export default {
     HeaderSection,
     WhatIsElection,
     SiteFooter,
-    BeforeFooter,
     FondQuote
   },
+
 };
 </script>
 
