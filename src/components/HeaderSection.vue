@@ -107,6 +107,7 @@ export default {
   height: inherit;
   position: fixed;
   z-index: -1;
+  
 }
 
 .layer-cloud-2 {
@@ -118,6 +119,7 @@ export default {
   height: inherit;
   position: fixed;
   z-index: -2;
+    	animation: float 5s ease-in-out infinite;
 }
 
 .layer-cloud-3 {
@@ -129,6 +131,7 @@ export default {
   height: inherit;
   position: fixed;
   z-index: -2;
+  animation: float 5s ease-in-out infinite;
 }
 
 .layer-cloud-4 {
@@ -140,7 +143,7 @@ export default {
   height: inherit;
   position: fixed;
   z-index: -2;
-
+ 	animation: float 8s ease-in-out infinite;
 }
 
 .layer-cloud-5 {
@@ -151,7 +154,7 @@ export default {
   width: 100%;
   height: inherit;
   position: fixed;
-
+  animation: float 8s ease-in-out infinite;
 }
 
 .layer-title {
@@ -164,6 +167,46 @@ export default {
   position: fixed;
   z-index: -1;
 }
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes dookdik {
+	0% {
+		transform: translatey(0px);
+	}
+  30%{
+    transform: translatey(0px);
+	}
+  35%{
+		transform: translatey(-30px);
+  }
+	40% {
+	  transform: translatey(0px);
+  }
+  50% {
+	  transform: translatey(0px);
+  }
+  55% {
+	  transform: translatey(-30px);
+  }
+  60% {
+	  transform: translatey(0px);
+  }
+  100% {
+		transform: translatey(0px);
+	}
+}
+
 
 @media only screen and (min-width: 1024px) {
   .layer-fond-stand {
@@ -190,9 +233,8 @@ export default {
 
    }
    .layer-title{
-
-  background-position: center 25vh;     
-    background-size: auto 10vh;
+      background-position: center 25vh;     
+      background-size: auto 10vh;
   }
 
 }
