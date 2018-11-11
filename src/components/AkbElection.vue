@@ -50,9 +50,9 @@ export default {
         url('../assets/3-akb-bg.png');
     background-attachment: fixed;
 
-    background-size:     cover;                      /* <------ */
+                    /* <------ */
     background-repeat:   no-repeat;
-    background-position: center center;
+    background-position: center 40%;
     height: 1200px;
     color: white;
     margin-bottom: 30px;
@@ -82,6 +82,8 @@ export default {
 @media only screen and (min-width: 992px) {
     .bg-pic{
         height: 100vh;
+        background-position: center center;
+            background-size:     cover;  
     }
 }
 </style>
