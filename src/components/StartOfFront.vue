@@ -65,11 +65,10 @@ export default {
     justify-content: center;
 }
 .title {
-    margin-top: 80px;
+    margin: 80px auto 5vh auto ;
     font-size: 60px;
     letter-spacing: 6px;
     line-height: 60px;
-    margin-bottom: 5vh;
     font-weight: bold;
     text-align: center;
     color: #ff55aa;

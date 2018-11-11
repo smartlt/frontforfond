@@ -28,6 +28,9 @@ img {
   max-height: 154px;
   width: 154px;
   background-color: #f8dadf;
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 </style>
