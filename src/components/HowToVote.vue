@@ -1,17 +1,31 @@
 <template>
   <div class="how-to-vote-container">
-    <div class="bg-pic">
-        <b-row class="full-height"> 
-            <b-col class="full-height">
-                <div class='text full-height'>
-                    <h1 class="head">{{ bgText.head }}</h1>
-                    <div class="body">{{ bgText.body }}</div>
-                </div>`
-            </b-col>
-            <b-col>
-            </b-col>
-        </b-row>
-    </div>
+    <parallax-container>
+        <div class="bg-pic">
+            <div class="parallax_group" >
+                <parallax-element class="parallax-fond-image" :parallaxStrength="-1" :type="'translation'">
+                    <img class="fond-image" src="../assets/5-how-fond.png" > 
+                </parallax-element>
+
+                <parallax-element class="parallax-overlay-image" :parallaxStrength="-10" :type="'translation'">
+                    <img class="effect-image" src="../assets/5-how-effect-1.png" > 
+                </parallax-element>
+            </div>
+            <b-row class="full-height"> 
+                <b-col cols="12">
+                    <parallax-element class="text-container" :parallaxStrength="5" :type="'translation'">
+                        <div class='text full-height' style ="width: 450px">
+                            <h1 class="head">{{ bgText.head }}</h1>
+                            <div class="body">{{ bgText.body }}</div>
+                        </div>
+                    </parallax-element>
+
+                </b-col>
+                <b-col>
+                </b-col>        
+            </b-row>
+        </div>
+    </parallax-container>
     <b-container>
         <b-row>
             <b-col cols="12" lg="3" v-for="(section,index) in sections" :key="section.id" v-bind:class="{active: section.isActive}" >
@@ -38,6 +52,10 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import VueMouseParallax from 'vue-mouse-parallax'
+
+Vue.use(VueMouseParallax)
 export default {
 	name: 'HowToVote',
 	data() {
@@ -92,11 +110,12 @@ export default {
 <style scoped>
 .how-to-vote-container {
     text-align: left;
+
 }
 
 .bg-pic {
-    background-image: url('../assets/5.jpg');
-    background-size:     cover;                      /* <------ */
+    background-image: url('../assets/5-how-bg.png');
+                    /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -104,6 +123,8 @@ export default {
     width: 100%;
     color: white;
     margin-bottom: 30px;
+        overflow: hidden;
+    position: relative;
 }
 
 .bg-pic .text {
@@ -112,10 +133,10 @@ export default {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
 }
+
 .text > .head {
-    font-size: 100px;
+    font-size: 80px;
     letter-spacing: 10px;
 }
 
@@ -125,6 +146,59 @@ export default {
     font-weight: 300;
 }
 
+.text-container{
+    top: 50%;
+    position: fixed;
+}
+
+
+.parallax_group{
+    width:100vw; height:100vh;
+}
+.parallax-fond-image{
+ /*   background-image: url('../assets/5-how-fond.png');
+background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;*/
+    position: absolute;
+    display: block;
+    overflow: visible;
+    box-sizing: border-box;
+    left: 30vw;
+    bottom: -10vh;
+       z-index: 15;
+}
+
+.parallax-effect-image{
+    z-index: -2;
+}
+
+
+.fond-image{
+    visibility: inherit;
+    width: 80em;
+    transition: none 0s ease 0s;
+    text-align: inherit;
+    line-height: 0px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 12px;
+
+}
+
+.effect-image{
+    z-index: -1;
+}
+
+.parallax-element text-container{
+ z-index: 20;
+}
 .title {
 	font-size: 28px;
     text-align: center;
@@ -179,20 +253,33 @@ export default {
 
 @media only screen and (min-width: 992px) {
     
-.title {
-    text-align: left;
-    margin: auto auto auto auto;
+    .title {
+        text-align: left;
+        margin: auto auto auto auto;
+    }
+
+    .content {
+        margin: 1em auto 1em auto;
+        padding: 0;
+    }
+
+    .number {
+        text-align: left;
+    }
+
+    .bg-pic{
+        background-position: center 50%;
+    }
+    .text > .head {
+        font-size: 100px;
+    }
 }
 
-.content {
-    margin: 1em auto 1em auto;
-    padding: 0;
-}
-
-.number {
-    text-align: left;
-}
-
+@media only screen and (min-width: 1100px) {
+    .bg-pic{
+        background-position: center center; 
+    }
+    
 
 }
 </style>
