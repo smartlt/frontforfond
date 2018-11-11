@@ -2,10 +2,10 @@
   <div id="header-container">
     <div class="parallax-container container-fluid p-0">
       <div class="layer-bg" data-type="parallax" data-depth="0.1"></div>      
-      <div class="layer-logo-fff" data-type="parallax" data-depth="0.4"></div> 
-      <div class="layer-fond-stand" data-type="parallax" data-depth="1.7"></div>
+      <div class="layer-logo-fff" data-type="parallax" data-depth="1"></div> 
+      <div class="layer-fond-stand" data-type="parallax" data-depth="-0.7"></div>
       <div class="layer-title" data-type="parallax" data-depth="0"></div>
-      <div class="layer-cloud-line" data-type="parallax" data-depth="1"></div>
+      <div class="layer-cloud-line" data-type="parallax" data-depth="0"></div>
       <div class="layer-cloud-2" data-type="parallax" data-depth="0.2"></div>
       <div class="layer-cloud-3" data-type="parallax" data-depth="0.2"></div>
       <div class="layer-cloud-4" data-type="parallax" data-depth="-0.1"></div>
@@ -168,7 +168,7 @@ export default {
 @media only screen and (min-width: 1024px) {
   .layer-fond-stand {
     background-size: auto 100vh;
-    background-position-y: 70vh;
+    background-position-y: 40vh;
   }
 
    .layer-cloud-2{
@@ -191,7 +191,7 @@ export default {
    }
    .layer-title{
 
-  background-position: center 40vh;     
+  background-position: center 25vh;     
     background-size: auto 10vh;
   }
 
