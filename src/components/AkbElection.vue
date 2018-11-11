@@ -1,24 +1,48 @@
 <template>
-  <div class="akb-election-container">
-    <div class="bg-pic">
-        <b-container class="full-height">
-            <b-row class="full-height">
-                <b-col class="content order-2">
-                    <div><p>{{ bgText.content1 }}</p>
-                    <p>{{ bgText.content2 }}</p>
-                    <p>{{ bgText.content3 }}</p>
-                    <p>{{ bgText.content4 }}</p></div>
-                </b-col>
-                <b-col class="title order-1">
-                    <span>{{ bgText.title }}</span>
-                </b-col>
-            </b-row>
-    </b-container>
+    <div class="akb-election-container">
+        <parallax-container>
+            <div class="bg-pic">
+                <div class="parallax_group" >
+                    <parallax-element class="parallax-otaku-image" :parallaxStrength="5" :type="'translation'">
+                        <img class="otaku-image" src="../assets/3-akb-otaku.png" > 
+                    </parallax-element>
+
+                    <parallax-element class="parallax-effect1-image" :parallaxStrength="-15" :type="'translation'">
+                        <img class="effect1-image" src="../assets/3-akb-effect-1.png" > 
+                    </parallax-element>
+
+                    <parallax-element class="parallax-effect2-image" :parallaxStrength="15" :type="'translation'">
+                        <img class="effect2-image" src="../assets/3-akb-effect-2.png" > 
+                    </parallax-element>
+                </div>
+                <b-container class="full-height">
+                    <b-row class="full-height">
+                        <b-col class="content order-2">
+                            <div><p>{{ bgText.content1 }}</p>
+                            <p>{{ bgText.content2 }}</p>
+                            <p>{{ bgText.content3 }}</p>
+                            <p>{{ bgText.content4 }}</p></div>
+                        </b-col>
+                        <b-col class="title order-1">
+                            <parallax-element class="text-container" :parallaxStrength="-3" :type="'translation'">
+                                <span>{{ bgText.title }}</span>
+                            </parallax-element>
+                        </b-col>
+                    
+
+                    </b-row>
+                </b-container>
+                    
+            </div>
+        </parallax-container>
     </div>
-  </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import VueMouseParallax from 'vue-mouse-parallax'
+
+Vue.use(VueMouseParallax)
 export default {
 	name: 'AkbElection',
 	data() {
@@ -53,9 +77,12 @@ export default {
                     /* <------ */
     background-repeat:   no-repeat;
     background-position: center 40%;
+        background-attachment: fixed;
     height: 1200px;
     color: white;
     margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
 }
 
 .title {
@@ -78,6 +105,53 @@ export default {
     font-size: 14px;
     color: white;
 }
+
+.parallax_group{
+    width:100vw; 
+}
+
+.parallax-otaku-image{
+    position: absolute;
+    display: block;
+    overflow: visible;
+    box-sizing: border-box;
+    right: -20vw;
+    bottom: -100vh;
+  
+}
+
+.parallax-effect1-image{
+    position: absolute;
+    display: block;
+    overflow: visible;
+    box-sizing: border-box;
+    left: 30vw;
+    bottom: -3vh;
+   
+}
+
+.parallax-effect2-image{
+    position: absolute;
+    display: block;
+    overflow: visible;
+    box-sizing: border-box;
+    left: -5vw;
+    bottom: 10vh;
+   
+}
+.otaku-image, .effect1-image, .effect2-image{
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    text-align: inherit;
+    line-height: 0px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
 
 @media only screen and (min-width: 992px) {
     .bg-pic{
