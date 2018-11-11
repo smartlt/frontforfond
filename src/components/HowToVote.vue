@@ -22,6 +22,16 @@
                     {{ section.button }}
                 </b-button>
             </b-col>
+             <b-col cols="12" lg="3">
+                <div class="donate">
+                    <div class="number donate">{{donate.id}}</div>
+                    <div class="title donate">{{ donate.title }}</div>
+                    <div class="content donate">{{ donate.content }}</div>
+                    <b-button variant="outline-secondary" block class="votebutton" :href="donate.link">
+                        {{ donate.button }}
+                    </b-button> 
+                </div>
+            </b-col>
         </b-row>
     </b-container>
   </div>
@@ -61,15 +71,18 @@ export default {
                     link: 'https://shop.bnk48.com/index.php?page=howtovote',
                     isActive: true,
                 },
-                {
-                    id: 4,
-                    title: 'Donate กับทางเรา',
-                    content: 'เพื่อเป็นการอำนวยความสะดวกของทุกคน เพราะการสั่งซื้อ BNK48 5th Single "BNK Festival" <br> นั้นมีขั้นตอนที่ค่อนข้างเยอะ และอาจจะมีค่าใช้จ่ายที่ค่อนข้างสูงสำหรับแฟนคลับบางกลุ่ม ทางเราได้เล็งเห็นปัญหานี้ เราจึงได้จัดทำระบบโดเนตขึ้นมา เพื่อเอื้ออำนวยความสะดวกให้ทุก ๆ คนไม่ว่าจะอายุ หรือมีกำลังทรัพย์เท่าไร สามารถร่วมกันเป็นส่วนหนึ่งในการสนับสนุนฟ้อนด์ให้ไปถึงฝันได้อย่างสะดวกและง่ายดาย โดยเราจะรวบรวมเงินทั้งหมดและนำไปสั่งซื้อโหวตให้แก่ฟ้อนด์ ทั้งนี้การรวมเงินกับทางเรา จะช่วยให้เราสามารถรวมยอด เพื่อใช้ในการประเมินภาพรวมของยอดโหวตได้อีกด้วย อย่างไรก็ตามทีมงานไม่ได้สนับสนุนให้ทุกคนโดเนตกับทางเราเป็นหลัก เราจัดทำระบบโดเนทขึ้นเพื่ออำนวยความสะดวกเท่านั้น หากผู้ใดไม่ประสงค์จะทำการร่วมโหวตกับกลุ่มเราตรงนี้ เรายินดีและพร้อมสนับสนุนให้ทุกคนโหวตกับทาง BNK48 Office ได้โดยตรงทันที',
-                    button: 'Donate',
-                    link: '',
-                    isActive: true,
-                },
-            ]
+
+            ],
+            donate:{
+                id: 'หรือ',
+                title: 'Donate กับทางเรา',
+                content: `<br>เพื่อเป็นการอำนวยความสะดวกของทุกคน เพราะการสั่งซื้อ BNK48 5th Single "BNK Festival"
+                นั้นมีขั้นตอนที่ค่อนข้างเยอะ และอาจจะมีค่าใช้จ่ายที่ค่อนข้างสูงสำหรับแฟนคลับบางกลุ่ม</pre> ทางเราได้เล็งเห็นปัญหานี้ เราจึงได้จัดทำระบบโดเนตขึ้นมา เพื่อเอื้ออำนวยความสะดวกให้ทุก ๆ คนไม่ว่าจะอายุ หรือมีกำลังทรัพย์เท่าไร สามารถร่วมกันเป็นส่วนหนึ่งในการสนับสนุนฟ้อนด์ให้ไปถึงฝันได้อย่างสะดวกและง่ายดาย โดยเราจะรวบรวมเงินทั้งหมดและนำไปสั่งซื้อโหวตให้แก่ฟ้อนด์ ทั้งนี้การรวมเงินกับทางเรา จะช่วยให้เราสามารถรวมยอด เพื่อใช้ในการประเมินภาพรวมของยอดโหวตได้อีกด้วย อย่างไรก็ตามทีมงานไม่ได้สนับสนุนให้ทุกคนโดเนตกับทางเราเป็นหลัก เราจัดทำระบบโดเนทขึ้นเพื่ออำนวยความสะดวกเท่านั้น หากผู้ใดไม่ประสงค์จะทำการร่วมโหวตกับกลุ่มเราตรงนี้ เรายินดีและพร้อมสนับสนุนให้ทุกคนโหวตกับทาง BNK48 Office ได้โดยตรงทันที`,
+                button: 'Donate',
+                link: '',
+                isActive: true,
+            },
+            
 		}
 	},
 };
@@ -114,6 +127,8 @@ export default {
 
 .title {
 	font-size: 28px;
+    text-align: center;
+    margin: 0px auto 1em auto;
 }
 
 .content {
@@ -122,12 +137,22 @@ export default {
     margin: 0 0 1.5em;
     font-size: 18px;
     font-weight: 300;
+    margin: auto auto 3em auto;
+    padding-left: 2em;
+    padding-right: 2em;
+
 }
 
 .number {
     font-size: 60px;
     font-weight: 500;
     color: #eeeeee;
+    text-align: center;
+
+}
+
+.donate.number,.donate.title{
+    color:#57DEFE;
 }
 
 .col.active > .title {
@@ -144,5 +169,30 @@ export default {
 }
 .votebutton{
     margin: 20px 0;
+}
+
+.content.pre {
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+  font-family: inherit;
+}
+
+@media only screen and (min-width: 992px) {
+    
+.title {
+    text-align: left;
+    margin: auto auto auto auto;
+}
+
+.content {
+    margin: 1em auto 1em auto;
+    padding: 0;
+}
+
+.number {
+    text-align: left;
+}
+
+
 }
 </style>
