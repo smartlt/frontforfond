@@ -1,6 +1,8 @@
 <template>
   <div id="header-container">
+    <star></star>
     <div class="parallax-container container-fluid p-0">
+
       <div class="layer-bg" data-type="parallax" data-depth="0.1"></div>      
       <div class="layer-logo-fff" data-type="parallax" data-depth="1"></div> 
       <div class="layer-fond-stand" data-type="parallax" data-depth="-0.7"></div>
@@ -15,8 +17,12 @@
 </template>
 
 <script>
+import Star from "@/components/Star";
 export default {
   name: "HeaderSection",
+  components:{
+    Star
+  },
   methods: {
     parallax1: function() {
       let depth, i, layer, layers, len, movement, topDistance, translate3d;
@@ -72,7 +78,7 @@ export default {
   width: 100%;
   height: inherit;
   position: fixed;
-  z-index: -3;
+  z-index: -4;
 }
 
 .layer-cloud-line {
