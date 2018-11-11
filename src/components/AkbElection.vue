@@ -81,9 +81,16 @@ export default {
 
 @media only screen and (min-width: 992px) {
     .bg-pic{
-        height: 100vh;
-        background-position: center center;
-            background-size:     cover;  
+        background-position: center 3vh;
+        background-size:     cover;  
     }
+    
+}
+
+@media only screen and (min-width: 1100px) {
+    .bg-pic{
+        background-position: center center; 
+    }
+    
 }
 </style>
