@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-7 right-container">
-                    <img width="600" src="../assets/3-1.jpg">
+                    <img style="width: 100%" src="../assets/3-1.jpg">
                 </div>
             </b-row>
         </b-container>
