@@ -15,7 +15,7 @@
                     </div>
                 </b-col>
                 <b-col cols="12" lg="6" class="right-container" >
-                    <img style="width: 100%" src="../assets/fff-rect-gray-1200px.png">
+                    <img class="fff-logo" style="width: 100%" src="../assets/fff-rect-gray-1200px.png">
                 </b-col>
             </b-row>
         </b-container>
@@ -45,11 +45,7 @@ export default {
     background-repeat: no-repeat;
     background-position: right center;
 }
-@media (max-width: 991.98px) {
-    .start-of-front-container {
-        background-image: none;
-    }
-}
+
 .left-container {
     height: 100%;
     background-image: url('../assets/fond-line-pink.svg');
@@ -58,11 +54,13 @@ export default {
     background-size: 60%;
     color: #a7a7a7;
 }
+
 .right-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .title {
     margin: 80px auto 5vh auto ;
     font-size: 60px;
@@ -72,8 +70,20 @@ export default {
     text-align: center;
     color: #ff55aa;
 }
+
 .fff-logo {
-    width: 440px;
-    height: 225px;
+    width: 60%;
+}
+
+@media (min-width: 992px) {
+    .fff-logo {
+    width: 100%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .start-of-front-container {
+        background-image: none;
+    }
 }
 </style>

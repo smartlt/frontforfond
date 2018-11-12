@@ -14,7 +14,7 @@
             <b-row class="full-height"> 
                 <b-col cols="12">
                     <parallax-element class="text-container" :parallaxStrength="5" :type="'translation'">
-                        <div class='text full-height' style ="width: 450px">
+                        <div class='text full-height'>
                             <h1 class="head">{{ bgText.head }}</h1>
                             <div class="body">{{ bgText.body }}</div>
                         </div>
@@ -144,7 +144,6 @@ export default {
 }
 
 .bg-pic .text {
-    padding-left: 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -154,10 +153,11 @@ export default {
 .text > .head {
     font-size: 80px;
     letter-spacing: 10px;
+    line-height: 0.8em;
+    text-align: center;
 }
 
 .text > .body {
-    margin-top: -20px;
     font-size: 20px;
     font-weight: 300;
 }
@@ -165,6 +165,9 @@ export default {
 .text-container{
     top: 50%;
     position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 
@@ -286,8 +289,20 @@ background-position: 50% 50%;
     .bg-pic{
         background-position: center 50%;
     }
+    
+    .bg-pic .text {
+        padding-left: 10%;
+    }
+
     .text > .head {
         font-size: 100px;
+         text-align: left;
+    }
+    .text-container{
+        top: 50%;
+        position: fixed;
+        left: auto;
+        right: auto;
     }
 }
 

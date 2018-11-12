@@ -1,8 +1,8 @@
 <template>
     <div class="before-footer">
-        <div class="container">
+        <div class="fond-container">
             <img class="over" src="../assets/6-fond3.png" >
-            <img class="under" src="../assets/fond-line-blue.svg" >
+            <div  class="under"></div>
         </div>
          <footer class="site-footer">
     <b-container fluid class="site-footer-container">
@@ -45,36 +45,38 @@
 <style scoped>
 .under
 {
-    max-width: 300px;
-    width: 100%;
-    position:absolute;
-    top: 0; 
-    transform: translate(-20%,0);
-    z-index:-1;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: url('../assets/fond-line-blue.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 60%;
+    top: 5%;
+    left: 45%;
 }
 .over
 {
     max-width: 450px;
     width: 100%;
     position:absolute;
-    top: 130px; 
+    top: 110px; 
     left: 45%;
     transform: translate(-50%,0);
     z-index:1;
 
 }
-.container{
+.fond-container{
     position: relative;
     margin: 0 auto;
     height: 500px;
+    overflow: hidden;
 }
-.before-footer{
-    width: 100%;
-    height: 500px;
-}
-.site-footer{
+  .before-footer{
+      width: 100%;
+      height: 500px;
+  }
+  .site-footer{
     height: auto;
-    margin-top: 15px;
     padding-bottom: 90px;
     background-color: #f3f3f3;
 
@@ -127,6 +129,12 @@
     }
   .footer-links{
     margin-top: 0px;
+  }
+  .under
+  {
+
+    background-size: 320px;
+
   }
 }
   

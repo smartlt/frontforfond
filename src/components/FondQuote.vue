@@ -81,7 +81,7 @@ export default {
     padding: 10rem 0;
 }
 .quote-text{
-    font-size: 4rem;
+    font-size: 60px;
     font-weight: 500;
 }
 
@@ -126,6 +126,9 @@ h4{
     .right-container {
         min-height: 50vh;
         background-size: 50%;
+    }
+    .quote-text{
+        font-size: 24px;
     }
 }
 </style>
