@@ -3,7 +3,7 @@
     <nav-bar></nav-bar>  
     <headerSection></headerSection>
     <vote-counter class="section"></vote-counter>
-    <what-is-election ></what-is-election>
+    <what-is-election></what-is-election>
     <akb-election class="section"></akb-election>
     <fond-quote class="section" ></fond-quote>
     <how-to-vote class="section"></how-to-vote>

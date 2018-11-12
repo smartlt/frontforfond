@@ -2,7 +2,7 @@
     <div class="start-of-front-container">
         <b-container>
             <b-row>
-                <b-col class="left-container">
+                <b-col cols="12" lg="6" class="left-container">
                     <div class="title">
                         {{ title }}
                     </div>
@@ -14,8 +14,8 @@
                         
                     </div>
                 </b-col>
-                <b-col class="right-container" >
-                    <img width="600" src="../assets/fff-rect-gray-1200px.png">
+                <b-col cols="12" lg="6" class="right-container" >
+                    <img style="width: 100%" src="../assets/fff-rect-gray-1200px.png">
                 </b-col>
             </b-row>
         </b-container>
@@ -57,7 +57,6 @@ export default {
     background-position: top center;
     background-size: 60%;
     color: #a7a7a7;
-    padding: 5rem 0;
 }
 .right-container {
     display: flex;
@@ -72,7 +71,6 @@ export default {
     font-weight: bold;
     text-align: center;
     color: #ff55aa;
-    width: 400px;
 }
 .fff-logo {
     width: 440px;

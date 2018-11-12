@@ -4,7 +4,7 @@
             <b-container>
                 <b-row class="">
                     <b-col cols="12" lg="6" class="left-container">
-                        <img width="450" src="../assets/4-fond-2.png">
+                        <img class="image-quote" src="../assets/4-fond-2.png">
                     </b-col>
                     <b-col cols="12" lg="6" class="right-container">
                         <div class="title">
@@ -110,6 +110,10 @@ h4{
 .fff-logo {
     width: 220px;
     height: 125px;
+}
+.image-quote{
+    max-width: 450px;
+    width: 100%;
 }
 
 @media (max-width: 991.98px) {

@@ -167,4 +167,11 @@ export default {
     }
     
 }
+
+@media (max-width: 991.98px) {
+    .title {
+        margin: 0 20px;
+        font-size: 45px;
+    }
+}
 </style>

@@ -23,7 +23,7 @@
 
 <script>
 export default {
-	name: 'StartOfFront',
+	name: 'WhatIsElection',
 	data() {
 		return {
             title: `อะไรคือ
@@ -89,5 +89,9 @@ export default {
         min-height: 50vh;
         background-size: 50%;
     }
+    .title {
+        font-size: 45px;
+    }
+    
 }
 </style>

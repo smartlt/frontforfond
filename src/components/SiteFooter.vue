@@ -45,19 +45,20 @@
 <style scoped>
 .under
 {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     position:absolute;
     top: 0; 
-    left: 50%;
     transform: translate(-20%,0);
     z-index:-1;
 }
 .over
 {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     position:absolute;
     top: 130px; 
-    left: 50%;
+    left: 45%;
     transform: translate(-50%,0);
     z-index:1;
 
