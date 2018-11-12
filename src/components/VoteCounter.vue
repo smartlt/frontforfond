@@ -51,7 +51,7 @@ export default {
 	name: 'VoteCounter',
 	data() {
 		return {
-			endDate: '11 20 2018',
+			endDate: '11/20/2018  11:05:00',
 			endDateText: '25 มกราคม 2019',
 			text: {
 				lastDate: 'วันสุดท้ายของการโหวต',
