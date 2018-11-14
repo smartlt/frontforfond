@@ -16,21 +16,21 @@
           </b-col>
           <b-col class="footer-links" cols="12" md="6">
             <b-button-group>
-              <b-button href="#" class="btn btn-secondary">
+              <b-button href="https://www.facebook.com/FrontForFOND/" class="btn btn-secondary">
                 <div id="button-content-facebook">
                   <img class="footer-link-icon" src="../assets/facebook-black.svg" >
                 </div>
               </b-button>
-              <b-button href="#" class="btn btn-secondary">
+              <b-button href="https://twitter.com/FrontforFOND" class="btn btn-secondary">
                 <div id="button-content-twitter">
                   <img class="footer-link-icon" src="../assets/twitter-black.svg" >
                 </div>
               </b-button>
-              <b-button href="#" class="btn btn-secondary">
+             <!-- <b-button href="#" class="btn btn-secondary">
                 <div id="button-content-yotube">
                   <img class="footer-link-icon" src="../assets/youtube-black.svg" >
                 </div>
-              </b-button>
+              </b-button> -->
             </b-button-group>
           </b-col>
         </b-row>
@@ -45,22 +45,28 @@
 <style scoped>
 .under
 {
+    transform: translateZ(0); /*Trigger GPU Acceleration*/
     min-height: 100vh;
     max-width: 100vw;
     background-image: url('../assets/fond-line-blue.svg');
     background-repeat: no-repeat;
     background-position: 50% 20%;
     background-size: 60%;
-    top: 5%;
+    -ms-transform: translateY(-5%);
+    -webkit-transform: translateY(-5%);
+    transform: translateY(-5%);
     left: 45%;
 }
 .over
 {
+  transform: translateZ(0); /*Trigger GPU Acceleration*/
     max-width: 450px;
     width: 100%;
     position:absolute;
     top: 110px; 
     left: 45%;
+    -ms-transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
     transform: translate(-50%,0);
     z-index:1;
 

@@ -13,9 +13,9 @@
             <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
           </b-nav-form> -->
             <div class="group-links">
-              <b-button href="#" class="button-content-facebook" ></b-button>
-              <b-button href="#" class="button-content-twitter"></b-button>
-              <b-button href="#" class="button-content-youtube"></b-button>
+              <b-button href="https://www.facebook.com/FrontForFOND/" class="button-content-facebook" ></b-button>
+              <b-button href="https://twitter.com/FrontforFOND" class="button-content-twitter"></b-button>
+              <!--<b-button href="#" class="button-content-youtube"></b-button>-->
             </div>
         </b-navbar-nav>
 
@@ -49,22 +49,28 @@ destroyed () {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .navbar {
+    transform: translateZ(0); /*Trigger GPU Acceleration*/
     height: 80px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
             0 2px 4px 0 rgba(0,0,0,0.08);
     transition:0.8s ease-out;
     background-color: white;
-    top: 0px;
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
     padding: 0;
 }
 
 .navbar.header{
+  transform: translateZ(0); /*Trigger GPU Acceleration*/
   all: unset;
   padding: 0;
   position: absolute;
   width: 100%;
   height: 55px;
-  top: -20px;
+  -ms-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
 
 }
 .group-links{
@@ -112,8 +118,9 @@ destroyed () {
 
 /*'translate(0)': 'translate(-100%)*/
 .logo {
+  transform: translateZ(0); /*Trigger GPU Acceleration*/
   position: absolute;
-  left: 50%;
+  transform:  translateX(50vw);
 }
 
 .logo-image {
