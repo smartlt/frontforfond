@@ -43,6 +43,8 @@ export default {
   line-height: 0.96;
   text-align: center;
   color: #7c7c7c;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 </style>
