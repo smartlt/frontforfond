@@ -111,31 +111,39 @@ export default {
 }
 
 .parallax-otaku-image{
+    transform: translateZ(0); /*Trigger GPU Acceleration*/
     position: absolute;
     display: block;
     overflow: visible;
     box-sizing: border-box;
-    right: -20vw;
-    bottom: -100vh;
+    -ms-transform: translate(-10%,93vh); /* IE 9 */
+    -webkit-transform: translate(-10%,93vh); /* Safari */
+    transform: translate(-10%,93vh);
   
 }
 
 .parallax-effect1-image{
+    transform: translateZ(0); /*Trigger GPU Acceleration*/
     position: absolute;
     display: block;
     overflow: visible;
     box-sizing: border-box;
-    left: 30vw;
+    -ms-transform: translateX(30vw);
+    -webkit-transform: translateX(30vw);
+    transform: translateX(30vw);
     bottom: -3vh;
    
 }
 
 .parallax-effect2-image{
+    transform: translateZ(0); /*Trigger GPU Acceleration*/
     position: absolute;
     display: block;
     overflow: visible;
     box-sizing: border-box;
-    left: -5vw;
+    -ms-transform: translateX(-5vw);
+    -webkit-transform: translateX(-5vw);    
+    transform: translateX(-5vw);
     bottom: 10vh;
    
 }

@@ -125,7 +125,8 @@ export default {
   height: inherit;
   position: fixed;
   z-index: -2;
-    	animation: float 5s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
+    transform: translateZ(-2); /* triggers GPU acceleration */
 }
 
 .layer-cloud-3 {
@@ -138,6 +139,7 @@ export default {
   position: fixed;
   z-index: -2;
   animation: float 5s ease-in-out infinite;
+    transform: translateZ(-2); /* triggers GPU acceleration */
 }
 
 .layer-cloud-4 {
@@ -150,6 +152,7 @@ export default {
   position: fixed;
   z-index: -2;
  	animation: float 8s ease-in-out infinite;
+  transform: translateZ(-2); /* triggers GPU acceleration */
 }
 
 .layer-cloud-5 {
@@ -161,6 +164,7 @@ export default {
   height: inherit;
   position: fixed;
   animation: float 8s ease-in-out infinite;
+  transform: translateZ(0); /* triggers GPU acceleration */
 }
 
 .layer-title {
