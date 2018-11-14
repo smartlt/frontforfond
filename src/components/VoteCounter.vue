@@ -10,33 +10,33 @@
            	<div class="counter">
 				<div class="test"> 
 					<span class="counter-value">{{ days }}</span>
-					<span>Day</span>
+					<span>Days</span>
 				</div>
 			</div>
 			<span class="counter-value">:</span>
 			<div class="counter">
 				<div class="test">
 					<div class="counter-value">{{ hours }}</div>
-					<div>Hour</div>
+					<div>Hours</div>
 				</div>
 			</div>
 			<span class="counter-value">:</span>
 			<div class="counter">
 				<div class="test">
 					<div class="counter-value">{{ minutes }}</div>
-					<div>Minute</div>
+					<div>Minutes</div>
 				</div>
 			</div>
 			<span class="counter-value">:</span>
 			<div class="counter">
 				<div class="test">
 					<div class="counter-value">{{ seconds }}</div>
-					<div>Second</div>
+					<div>Seconds</div>
 				</div>
 			</div>
         </div>
 		<div>
-			<b-button variant="outline-secondary">Donate</b-button>
+			<b-button variant="outline-secondary" href="https://goo.gl/forms/uIsh2X7hNcH1Z2XP2">Donate</b-button>
 		</div>
     </div>
   </div>
@@ -51,8 +51,8 @@ export default {
 	name: 'VoteCounter',
 	data() {
 		return {
-			endDate: '11/20/2018  11:05:00',
-			endDateText: '25 มกราคม 2019',
+			endDate: '1/22/2019  12:00:00',
+			endDateText: '24 มกราคม 2019',
 			text: {
 				lastDate: 'วันสุดท้ายของการโหวต',
 				timeLeft: 'เวลาที่ยังโดเนทได้',
