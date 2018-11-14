@@ -24,7 +24,7 @@ export default {
   name: "Alliance",
   data() {
     return {
-      alliances: allianceData
+      alliances: allianceData,
     };
   },
   components: {
