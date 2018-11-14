@@ -20,13 +20,11 @@ import allianceData from "./alliance-mockup.json";
 // import windows template
 import AllianceWindow from "@/components/AllianceWindow";
 
-const defineColNumbers = 7;
 export default {
   name: "Alliance",
   data() {
     return {
       alliances: allianceData,
-      defineColNumbers: defineColNumbers
     };
   },
   components: {

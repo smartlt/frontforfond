@@ -1,47 +1,77 @@
 [
     {
-        "name": "test1",
-        "pageLink": "https://www.facebook.com/FrontForFOND/",
-        "imgLink": "https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/43467046_653966691667341_4642418201647382528_n.png?_nc_cat=101&_nc_ht=scontent.fbkk12-1.fna&oh=dfbcae7390a872cb09533b1e6216a85d&oe=5C866C2A"
-    },
-    {
-        "name": "test2",
-        "pageLink": "https://www.facebook.com/FrontForFOND/",
-        "imgLink": "https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/43467046_653966691667341_4642418201647382528_n.png?_nc_cat=101&_nc_ht=scontent.fbkk12-1.fna&oh=dfbcae7390a872cb09533b1e6216a85d&oe=5C866C2A"
-    },
-    {
-        "name": "test3",
-        "pageLink": "https://www.facebook.com/FrontForFOND/",
-        "imgLink": "https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/43467046_653966691667341_4642418201647382528_n.png?_nc_cat=101&_nc_ht=scontent.fbkk12-1.fna&oh=dfbcae7390a872cb09533b1e6216a85d&oe=5C866C2A"
-    },
-    {
-        "name": "test4",
-        "pageLink": "https://www.facebook.com/FrontForFOND/",
-        "imgLink": "https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/43467046_653966691667341_4642418201647382528_n.png?_nc_cat=101&_nc_ht=scontent.fbkk12-1.fna&oh=dfbcae7390a872cb09533b1e6216a85d&oe=5C866C2A"
-    },
-    {
-        "name": "test5",
+        "name": "สวนพริกของฟ้อนด์",
         "pageLink": "https://www.facebook.com/ChilliofFond/",
-        "imgLink": "https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.0-9/39625178_1090378171115217_6672306856263680000_n.jpg?_nc_cat=103&_nc_ht=scontent.fbkk8-2.fna&oh=92547784fef25ee54c72b8a666023caa&oe=5C7D9F96"
+        "imgLink": "alliance_1.สวนพริก.png"
     },
     {
-        "name": "test6",
-        "pageLink": "https://www.facebook.com/ChilliofFond/",
-        "imgLink": "https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.0-9/39625178_1090378171115217_6672306856263680000_n.jpg?_nc_cat=103&_nc_ht=scontent.fbkk8-2.fna&oh=92547784fef25ee54c72b8a666023caa&oe=5C7D9F96"
+        "name": "Fond BNK48 Thailand Fanclub",
+        "pageLink": "https://www.facebook.com/FondBNK48ThailandFanclub/",
+        "imgLink": "alliance_002.FTFC.png"
     },
     {
-        "name": "test7",
-        "pageLink": "https://www.facebook.com/ChilliofFond/",
-        "imgLink": "https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.0-9/39625178_1090378171115217_6672306856263680000_n.jpg?_nc_cat=103&_nc_ht=scontent.fbkk8-2.fna&oh=92547784fef25ee54c72b8a666023caa&oe=5C7D9F96"
+        "name": "Fond's Area",
+        "pageLink": "https://www.facebook.com/fondarea/",
+        "imgLink": "alliance_003.png"
     },
     {
-        "name": "test8",
-        "pageLink": "https://www.facebook.com/ChilliofFond/",
-        "imgLink": "https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.0-9/39625178_1090378171115217_6672306856263680000_n.jpg?_nc_cat=103&_nc_ht=scontent.fbkk8-2.fna&oh=92547784fef25ee54c72b8a666023caa&oe=5C7D9F96"
+        "name": "ทีมงานหวีดฟ้อนด์",
+        "pageLink": "https://www.facebook.com/%E0%B8%AB%E0%B8%A7%E0%B8%B5%E0%B8%94%E0%B8%9F%E0%B9%89%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B9%8C-285206962323412/",
+        "imgLink": "alliance_004.png"
     },
     {
-        "name": "test9",
-        "pageLink": "https://www.facebook.com/ChilliofFond/",
-        "imgLink": "https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.0-9/39625178_1090378171115217_6672306856263680000_n.jpg?_nc_cat=103&_nc_ht=scontent.fbkk8-2.fna&oh=92547784fef25ee54c72b8a666023caa&oe=5C7D9F96"
+        "name": "จฮก.",
+        "pageLink": "https://www.facebook.com/jorhorkor48/",
+        "imgLink": "alliance_005-จฮก.png"
+    },
+    {
+        "name": "โอตะซ่อมคอม",
+        "pageLink": "https://www.facebook.com/otafixcom",
+        "imgLink": "alliance_006.png"
+    },
+    {
+        "name": "นายโอตะ48",
+        "pageLink": "https://www.facebook.com/Mr.ota48/",
+        "imgLink": "alliance_007.png"
+    },
+    {
+        "name": "ตามไอดอลกระเป๋าแบน 48",
+        "pageLink": "https://www.facebook.com/krapaoban48/",
+        "imgLink": "alliance_008.png"
+    },
+    {
+        "name": "โฟกัส 48",
+        "pageLink": "https://www.facebook.com/focusbnk48/",
+        "imgLink": "alliance_009.png"
+    },
+    {
+        "name": "037M2",
+        "pageLink": "https://www.facebook.com/037M2/",
+        "imgLink": "alliance_010.png"
+    },
+    {
+        "name": "Stratusfotomoments",
+        "pageLink": "https://www.facebook.com/stratusfotomoments/",
+        "imgLink": "alliance_011.png"
+    },
+    {
+        "name": "กล้อง ยืม เพื่อน",
+        "pageLink": "https://www.facebook.com/Koryorpor48/",
+        "imgLink": "alliance_012.png"
+    },
+    {
+        "name": "คุณตข",
+        "pageLink": "https://www.facebook.com/k.tounka/",
+        "imgLink": "alliance_013.png"
+    },
+    {
+        "name": "Love Factory 48",
+        "pageLink": "https://www.facebook.com/lovefactory48/",
+        "imgLink": "alliance_014.png"
+    },
+    {
+        "name": "Doublelover48",
+        "pageLink": "https://www.facebook.com/Doublelover48-255258701858328/",
+        "imgLink": "alliance_015.png"
     }
 ]

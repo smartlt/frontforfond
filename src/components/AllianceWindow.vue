@@ -1,7 +1,7 @@
 <template>
     <div>
         <a :href="pageLink" target="_blank">
-            <b-img fluid :src="imgLink" alt="No Image" :title="pageName" />
+            <b-img fluid :src="src" :alt="pageName" :title="pageName" />
         </a>
     </div>
 </template>
@@ -11,7 +11,7 @@ export default {
   name: "allianceWindow",
   data() {
     return {
-      imglink: require("../assets/fondlogo.png")
+      src: require('../assets/alliance/' + this.imgLink)
     };
   },
   props: {
@@ -24,13 +24,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-img {  
+img {
   max-height: 154px;
   width: 154px;
-  background-color: #f8dadf;
-      display: block;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 </style>
