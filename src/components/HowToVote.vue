@@ -12,9 +12,9 @@
                 </parallax-element>
             </div>
             <b-row class="full-height"> 
-                <b-col cols="12">
-                    <parallax-element class="text-container" :parallaxStrength="5" :type="'translation'">
-                        <div class='text full-height'>
+                <b-col cols="12" class="full-height" >
+                    <parallax-element class="text-container full-height" :parallaxStrength="5" :type="'translation'">
+                        <div class='text full-height' id="text-howto">
                             <h1 class="head">{{ bgText.head }}</h1>
                             <div class="body">{{ bgText.body }}</div>
                         </div>
@@ -62,7 +62,7 @@ export default {
 		return {
             bgText: {
                 head: 'วิธีโหวต',
-                body: 'การโหวตให้ฟ้อนด์มี 3 วิธีด้วยกัน',
+                body: 'การโหวตให้ฟ้อนด์มี 3 ขั้นตอนด้วยกัน',
             },
 			sections: [
                 {
@@ -117,7 +117,7 @@ export default {
                                 `อย่างไรก็ตามทีมงานไม่ได้สนับสนุนให้ทุกคนโดเนตกับทางเราเป็นหลัก เราจัดทำระบบโดเนทขึ้นเพื่ออำนวยความสะดวกเท่านั้น หากผู้ใดไม่ประสงค์จะทำการร่วมโหวตกับกลุ่มเราตรงนี้
                                 เรายินดีและพร้อมสนับสนุนให้ทุกคนโหวตกับทาง BNK48 Office โดยตรง`
                             ],
-                button: 'Donate และอ่านรายละเอียดเพิ่มเติม',
+                button: 'รายละเอียดการโดเนท',
                 link: 'https://goo.gl/forms/uIsh2X7hNcH1Z2XP2',
                 isActive: true,
             },
@@ -136,16 +136,13 @@ export default {
 
 .bg-pic {
     background-image: url('../assets/5-how-bg.png');
-                    /* <------ */
     background-repeat:   no-repeat;
-   
-    background-position: center center;
-    background-attachment: fixed;
+    background-position: 50% 50%;
     height: 100vh;
     width: 100%;
     color: white;
     margin-bottom: 30px;
-        overflow: hidden;
+    overflow: hidden;
     position: relative;
 }
 
@@ -169,18 +166,22 @@ export default {
     font-weight: 300;
 }
 
-.text-container{
-    top: 50%;
-    position: fixed;
-    left: 0;
-    right: 0;
+.text.full-height{
     z-index: 1000;
 }
 
+#text-howto{
+    display: flex;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
 
 .parallax_group{
-    width:100vw; height:100vh;
+    width:100vw; 
 }
+
+
 .parallax-fond-image{
  /*   background-image: url('../assets/5-how-fond.png');
 background-position: 50% 50%;
@@ -194,7 +195,7 @@ background-position: 50% 50%;
     overflow: visible;
     box-sizing: border-box;
     left: 30vw;
-    bottom: -10vh;
+    bottom: -20px;
        z-index: 15;
 }
 
@@ -224,11 +225,11 @@ background-position: 50% 50%;
 
 .effect-image{
     z-index: -1;
+        visibility: inherit;
+        margin: 0px;
+    padding: 0px;
 }
 
-.parallax-element text-container{
- z-index: 20;
-}
 .title {
 	font-size: 28px;
     text-align: center;
@@ -300,10 +301,10 @@ background-position: 50% 50%;
     .number {
         text-align: left;
     }
-
+/*
     .bg-pic{
-        background-position: center 50%;
-    }
+        background-position: center center;
+    }*/
     
     .bg-pic .text {
         padding-left: 10%;
@@ -313,10 +314,8 @@ background-position: 50% 50%;
         font-size: 100px;
          text-align: left;
     }
-    .text-container{
-        top: 50%;
-        position: fixed;
-        left: 20%;
+    #text-howto{
+        left: 15vw;
         right: auto;
     }
 }
