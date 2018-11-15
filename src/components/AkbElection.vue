@@ -78,7 +78,7 @@ export default {
     background-repeat:   no-repeat;
     background-position: center 40%;
         background-attachment: fixed;
-    height: 1200px;
+    height: 1400px;
     color: white;
     margin-bottom: 30px;
     overflow: hidden;
@@ -161,6 +161,13 @@ export default {
     letter-spacing: 0px;
     font-weight: 400;
     font-size: 12px;
+}
+
+@media only screen and (min-width: 400px) {
+    .bg-pic{
+        height: 1200px;
+    }
+    
 }
 
 
