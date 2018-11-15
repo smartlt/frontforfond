@@ -138,6 +138,7 @@ export default {
     background-image: url('../assets/5-how-bg.png');
                     /* <------ */
     background-repeat:   no-repeat;
+   
     background-position: center center;
     background-attachment: fixed;
     height: 100vh;
@@ -201,6 +202,10 @@ background-position: 50% 50%;
     z-index: -2;
 }
 
+.parallax-overlay-image{
+    right: -5%;
+    position: absolute;
+}
 
 .fond-image{
     visibility: inherit;
@@ -311,7 +316,7 @@ background-position: 50% 50%;
     .text-container{
         top: 50%;
         position: fixed;
-        left: auto;
+        left: 20%;
         right: auto;
     }
 }
@@ -320,7 +325,13 @@ background-position: 50% 50%;
     .bg-pic{
         background-position: center center; 
     }
-    
-
 }
+
+@media only screen and (min-width: 1920px) {
+    .bg-pic{
+        background-size: 100%;
+    }
+}
+
+
 </style>

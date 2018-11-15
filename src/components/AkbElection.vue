@@ -115,10 +115,12 @@ export default {
     position: absolute;
     display: block;
     overflow: visible;
-    box-sizing: border-box;
-    -ms-transform: translate(-10%,93vh); /* IE 9 */
-    -webkit-transform: translate(-10%,93vh); /* Safari */
-    transform: translate(-10%,93vh);
+    box-sizing: border-box;/*
+    -ms-transform: translate(-10%,93vh); 
+    -webkit-transform: translate(-10%,93vh); 
+    transform: translate(-10%,93vh);*/
+    bottom: -60vh;
+    left: -20vh;
   
 }
 
