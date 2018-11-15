@@ -410,7 +410,7 @@ body {
 	 overflow: hidden;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
 .star-container{
 	display: none !important; 
 }
