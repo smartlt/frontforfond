@@ -218,6 +218,19 @@ export default {
 }
 
 
+@media (max-width: 475px) {
+  .layer-cloud-2 {
+animation: none;
+  }.layer-cloud-3{
+    animation: none;
+  }.layer-cloud-4{
+    animation: none;
+  }.layer-cloud-5{
+    animation: none;
+  }
+}
+
+
 @media only screen and (min-width: 1024px) {
   .layer-fond-stand {
     background-size: auto 100vh;
@@ -244,7 +257,11 @@ export default {
    }
    .layer-title{
       background-position: center 25vh;     
-      background-size: auto 10vh;
+      background-size: contain;
+      max-width:90vh ;
+      margin: auto;
+      left: 0;
+      right: 0;
   }
 
 }
